@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>too big Debt to Income ratio</name>
+  <uuid>6a655852-298e-4dad-9e73-e296fcf1a869</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+    set 'minimum income' to 0.37 * the yearly income of Borrower ;
+    set 'yearly repayment' to Repayment * 12;
+if
+    'yearly repayment' is at least 'minimum income'
+then
+     decision does not get approved; 
+     set the message of decision to "Too big Debt/Income ratio: " + 'yearly repayment' / the yearly income of Borrower ;
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

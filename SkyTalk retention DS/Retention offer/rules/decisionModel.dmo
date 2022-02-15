@@ -16,7 +16,7 @@
         <variable id="node_0_ii" name="Customer" typeRef="CustomerRecord"/>
     </inputData>
     <decision id="node_1" name="Operation cost">
-        <description>Indicate whether this customer costs a lot or not.</description>
+        <description>Indicate whether this customer costs a lot or not</description>
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="CustomerRecord" collection="false" name="Customer"/>

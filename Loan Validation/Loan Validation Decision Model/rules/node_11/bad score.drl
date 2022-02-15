@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>bad score</name>
+  <uuid>08998bd0-0856-493b-9e51-825e98ba5795</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+    set 'minimum score' to 200 ;
+if
+    the credit score of Borrower  is less than 'minimum score'
+then
+     decision does not get approved; 
+     set the message of decision to  "Credit score below " + 'minimum score' ;
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>corporate score</name>
+  <uuid>e04b3e03-759b-4347-bc70-c9ca0f2d80cc</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set decision to 'Bankruptcy Score'  + 'Salary Score'  + the credit score of Borrower ;
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>max amount exceeded</name>
+  <uuid>ddbf2102-a753-4d57-92df-d4c3c7f2dd90</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+    set maxAmount to 1,000,000 ;
+if
+    the amount of Loan  is at least maxAmount
+then
+ decision does not get approved; 
+ set the message of decision to "The loan cannot exceed " + maxAmount ;
+    ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

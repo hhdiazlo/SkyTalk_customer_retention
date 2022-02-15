@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>no name</name>
+  <uuid>d2d4d697-7164-4c72-8c86-b1c27a841b8c</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+    the last name of Borrower is empty
+then
+    decision does not get approved; 
+    set the message of decision to "The borrower's name is empty" ;
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

@@ -5,7 +5,7 @@
   <decisionModel href="../rules/decisionModel.dmo#4d8608da-050d-4d72-9c60-fc57307e0a33"/>
   <targetRuleProject href="../../Retention%20offer#e0741390-d82a-4154-aac4-fc9bbeb3e3b0"/>
   <tags key="operationDescription">
-    <value><![CDATA[""]]></value>
+    <value><![CDATA["demo"]]></value>
   </tags>
   <tags key="operationName">
     <value><![CDATA["retentionOffer"]]></value>

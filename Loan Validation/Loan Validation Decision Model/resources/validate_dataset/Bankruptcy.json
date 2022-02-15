@@ -1,0 +1,27 @@
+{
+  "loan": {
+    "number of monthly payments": 72,
+    "start date": "2020-06-01T00:00:00Z",
+    "amount": 185000,
+    "loan to value": 0.7
+  },
+  "borrower": {
+    "first name": "John",
+    "last name": "Doe",
+    "SSN": {
+      "area number": "123",
+      "group code": "45",
+      "serial number": "6789"
+    },
+    "latest bankruptcy": {
+      "date": "2019-03-10T00:00:00Z",
+      "chapter": 7,
+      "reason": "Unemployment"
+    },
+    "yearly income": 100000,
+    "zip code": "91320",
+    "credit score": 500,
+    "birth date": "1968-05-12T00:00:00Z"
+  },
+  "currentTime": "2020-02-04T08:41:21.242Z"
+}

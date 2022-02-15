@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>wrong SSN</name>
+  <uuid>3436fbaa-d395-4375-a61b-67384238d884</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+    the area number of the SSN of Borrower is one of { "000" , "666" }
+then
+    decision does not get approved; 
+    set the message of decision to "The borrower's SSN area number cannot be " + the area number of the SSN of Borrower ;
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

@@ -1,0 +1,109 @@
+
+# Approval
+Approval#concept.label = approval
+Approval.Approval(boolean,java.lang.String)#phrase.navigation = a new {approval} where {0, approved} {1, message}
+Approval.approved#phrase.action[0] = {this} gets approved only if {approved}
+Approval.approved#phrase.action[1] = make it {approved} that {this} is approved
+Approval.approved#phrase.action[1].deprecated = true
+Approval.approved#phrase.navigation = {this} is approved
+Approval.approved#phrase.negative_predicate = {this} is not approved
+Approval.approved#phrase.negative_predicate_setter = {this} does not get approved
+Approval.approved#phrase.positive_predicate_setter = {this} gets approved
+Approval.message#phrase.action = set the message of {this} to {message}
+Approval.message#phrase.navigation = {message} of {this}
+
+# Bankruptcy
+Bankruptcy#concept.label = bankruptcy
+Bankruptcy.Bankruptcy(java.lang.Long,ilog.rules.brl.Date,java.lang.String)#phrase.navigation = a new {bankruptcy} where {0, chapter} {1, date} {2, reason}
+Bankruptcy.chapter#phrase.action = set the chapter of {this} to {chapter}
+Bankruptcy.chapter#phrase.addition_setter = add {chapter} to the chapter of {this}
+Bankruptcy.chapter#phrase.navigation = {chapter} of {this}
+Bankruptcy.chapter#phrase.subtraction_setter = subtract {chapter} from the chapter of {this}
+Bankruptcy.date#phrase.action = set the date of {this} to {date}
+Bankruptcy.date#phrase.clearer = clear the date of {this}
+Bankruptcy.date#phrase.navigation = {date} of {this}
+Bankruptcy.reason#phrase.action = set the reason of {this} to {reason}
+Bankruptcy.reason#phrase.navigation = {reason} of {this}
+
+# Borrower
+Borrower#concept.label = borrower
+Borrower.Borrower(SSN,ilog.rules.brl.Date,java.lang.Long,java.lang.String,java.lang.String,Bankruptcy,Borrower,java.lang.Long,java.lang.String)#phrase.navigation = a new {borrower} where {0, SSN} {1, birth date} {2, credit score} {3, first name} {4, last name} {5, latest bankruptcy} {6, spouse} {7, yearly income} {8, zip code}
+Borrower.SSN#phrase.action = set the SSN of {this} to {SSN}
+Borrower.SSN#phrase.clearer = clear the SSN of {this}
+Borrower.SSN#phrase.navigation = {SSN} of {this}
+Borrower.birthDate#phrase.action = set the birth date of {this} to {birth date}
+Borrower.birthDate#phrase.clearer = clear the birth date of {this}
+Borrower.birthDate#phrase.navigation = {birth date} of {this}
+Borrower.creditScore#phrase.action = set the credit score of {this} to {credit score}
+Borrower.creditScore#phrase.addition_setter = add {credit score} to the credit score of {this}
+Borrower.creditScore#phrase.navigation = {credit score} of {this}
+Borrower.creditScore#phrase.subtraction_setter = subtract {credit score} from the credit score of {this}
+Borrower.firstName#phrase.action = set the first name of {this} to {first name}
+Borrower.firstName#phrase.navigation = {first name} of {this}
+Borrower.lastName#phrase.action = set the last name of {this} to {last name}
+Borrower.lastName#phrase.navigation = {last name} of {this}
+Borrower.latestBankruptcy#phrase.action = set the latest bankruptcy of {this} to {latest bankruptcy}
+Borrower.latestBankruptcy#phrase.clearer = clear the latest bankruptcy of {this}
+Borrower.latestBankruptcy#phrase.navigation = {latest bankruptcy} of {this}
+Borrower.spouse#phrase.action = set the spouse of {this} to {spouse}
+Borrower.spouse#phrase.clearer = clear the spouse of {this}
+Borrower.spouse#phrase.navigation = {spouse} of {this}
+Borrower.yearlyIncome#phrase.action = set the yearly income of {this} to {yearly income}
+Borrower.yearlyIncome#phrase.addition_setter = add {yearly income} to the yearly income of {this}
+Borrower.yearlyIncome#phrase.navigation = {yearly income} of {this}
+Borrower.yearlyIncome#phrase.subtraction_setter = subtract {yearly income} from the yearly income of {this}
+Borrower.zipCode#phrase.action = set the zip code of {this} to {zip code}
+Borrower.zipCode#phrase.navigation = {zip code} of {this}
+
+# Grade
+Grade#concept.label = grade
+Grade.Grade(java.lang.String,java.lang.String)#phrase.navigation = a new {grade} where {0, grade} {1, message}
+Grade.grade#phrase.action = set the grade of {this} to {grade}
+Grade.grade#phrase.navigation = {grade} of {this}
+Grade.message#phrase.action = set the message of {this} to {message}
+Grade.message#phrase.navigation = {message} of {this}
+
+# Insurance
+Insurance#concept.label = insurance
+Insurance.Insurance(double,boolean)#phrase.navigation = a new {insurance} where {0, rate} {1, required}
+Insurance.rate#phrase.action = set the rate of {this} to {rate}
+Insurance.rate#phrase.addition_setter = add {rate} to the rate of {this}
+Insurance.rate#phrase.navigation = {rate} of {this}
+Insurance.rate#phrase.subtraction_setter = subtract {rate} from the rate of {this}
+Insurance.required#phrase.action[0] = {this} gets required only if {required}
+Insurance.required#phrase.action[1] = make it {required} that {this} is required
+Insurance.required#phrase.action[1].deprecated = true
+Insurance.required#phrase.navigation = {this} is required
+Insurance.required#phrase.negative_predicate = {this} is not required
+Insurance.required#phrase.negative_predicate_setter = {this} does not get required
+Insurance.required#phrase.positive_predicate_setter = {this} gets required
+
+# Loan
+Loan#concept.documentation = Loan request description.
+Loan#concept.label = loan
+Loan.Loan(java.lang.Long,double,java.lang.Long,ilog.rules.brl.Date)#phrase.navigation = a new {loan} where {0, amount} {1, loan to value} {2, number of monthly payments} {3, start date}
+Loan.amount#phrase.action = set the amount of {this} to {amount}
+Loan.amount#phrase.addition_setter = add {amount} to the amount of {this}
+Loan.amount#phrase.navigation = {amount} of {this}
+Loan.amount#phrase.subtraction_setter = subtract {amount} from the amount of {this}
+Loan.loanToValue#phrase.action = set the loan to value of {this} to {loan to value}
+Loan.loanToValue#phrase.addition_setter = add {loan to value} to the loan to value of {this}
+Loan.loanToValue#phrase.navigation = {loan to value} of {this}
+Loan.loanToValue#phrase.subtraction_setter = subtract {loan to value} from the loan to value of {this}
+Loan.numberOfMonthlyPayments#phrase.action = set the number of monthly payments of {this} to {number of monthly payments}
+Loan.numberOfMonthlyPayments#phrase.addition_setter = add {number of monthly payments} to the number of monthly payments of {this}
+Loan.numberOfMonthlyPayments#phrase.navigation = {number of monthly payments} of {this}
+Loan.numberOfMonthlyPayments#phrase.subtraction_setter = subtract {number of monthly payments} from the number of monthly payments of {this}
+Loan.startDate#phrase.action = set the start date of {this} to {start date}
+Loan.startDate#phrase.clearer = clear the start date of {this}
+Loan.startDate#phrase.navigation = {start date} of {this}
+
+# SSN
+SSN#concept.label = SSN
+SSN.SSN(java.lang.String,java.lang.String,java.lang.String)#phrase.navigation = a new {SSN} where {0, area number} {1, group code} {2, serial number}
+SSN.areaNumber#phrase.action = set the area number of {this} to {area number}
+SSN.areaNumber#phrase.navigation = {area number} of {this}
+SSN.groupCode#phrase.action = set the group code of {this} to {group code}
+SSN.groupCode#phrase.navigation = {group code} of {this}
+SSN.serialNumber#phrase.action = set the serial number of {this} to {serial number}
+SSN.serialNumber#phrase.navigation = {serial number} of {this}

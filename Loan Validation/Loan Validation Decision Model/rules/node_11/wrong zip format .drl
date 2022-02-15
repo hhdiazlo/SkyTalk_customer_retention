@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>wrong zip format </name>
+  <uuid>c9865eda-5fe0-4417-99cb-c014de88c8e6</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+    set 'zip length' to 5 ;
+if
+    the zip code of Borrower is null
+    or the length of the zip code of Borrower does not equal 'zip length'
+then
+   decision does not get approved; 
+   set the message of decision to "The borrower's Zip Code should have " + 'zip length' + " digits" ;
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

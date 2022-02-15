@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>0acb7853-dd08-4a70-bf30-ce32cfc2f95a</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="Loan Validation Decision Model" namespace="">
+    <extensionElements>
+        <description xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">Determine loan approval based on multiple criteria, such as credit score, income, etc.</description>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_0" name="Loan">
+        <description>The amount, loan value, number of monthly payments and start date of the loan request</description>
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="Loan" collection="false" name="Loan"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_0_ii" name="Loan" typeRef="Loan"/>
+    </inputData>
+    <decision id="node_1" name="Duration">
+        <description>Calculate the duration of the loan</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="Loan" collection="false" name="Loan"/>
+                <output bomType="java.lang.Long" collection="false" name="Duration"/>
+                <rule defaultRule="false" href="node_1/duration.drl" kind="BusinessRule" name="duration"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="Duration" typeRef="java.lang.Long"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_2" name="Yearly Interest Rate">
+        <description>Calculate the yearly interest rate based on the loan to value and duration of the loan</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="Loan" collection="false" name="Loan"/>
+                <input bomType="java.lang.Long" collection="false" name="Duration"/>
+                <output bomType="java.lang.Double" collection="false" name="Yearly Interest Rate"/>
+                <rule defaultRule="false" href="node_2/yearly%20interest%20rate.dmt" kind="DecisionTable" name="yearly interest rate"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_2_ii" name="Yearly Interest Rate" typeRef="java.lang.Double"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_1"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_3" name="Repayment">
+        <description>Calculate the monthly repayment</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="Loan" collection="false" name="Loan"/>
+                <input bomType="java.lang.Double" collection="false" name="Yearly Interest Rate"/>
+                <output bomType="java.lang.Double" collection="false" name="Repayment"/>
+                <rule defaultRule="false" href="node_3/repayment.drl" kind="BusinessRule" name="repayment"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_3_ii" name="Repayment" typeRef="java.lang.Double"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_4" name="Borrower">
+        <description>Details about the borrower, such as name, birth date, yearly income and Social Security Number</description>
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="Borrower" collection="false" name="Borrower"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_4_ii" name="Borrower" typeRef="Borrower"/>
+    </inputData>
+    <decision id="node_5" name="Salary Score">
+        <description>Calculate the salary score of the borrower based on their yearly income</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="Borrower" collection="false" name="Borrower"/>
+                <output bomType="java.lang.Double" collection="false" name="Salary Score"/>
+                <rule defaultRule="false" href="node_5/salary%20score.dmt" kind="DecisionTable" name="salary score"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_5_ii" name="Salary Score" typeRef="java.lang.Double"/>
+        <informationRequirement>
+            <requiredInput href="#node_4"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_6" name="Bankruptcy Score">
+        <description>Calculate the bankruptcy score of the borrower based on the age of their latest bankruptcy, if any</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="Borrower" collection="false" name="Borrower"/>
+                <input bomType="ilog.rules.brl.Date" collection="false" name="current time"/>
+                <output bomType="java.lang.Double" collection="false" name="Bankruptcy Score"/>
+                <rule defaultRule="true" href="node_6/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+                <rule defaultRule="false" href="node_6/bankruptcy%20score.dmt" kind="DecisionTable" name="bankruptcy score"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_6_ii" name="Bankruptcy Score" typeRef="java.lang.Double"/>
+        <informationRequirement>
+            <requiredInput href="#node_4"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_7"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_7" name="current time">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="ilog.rules.brl.Date" collection="false" name="current time"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_7_ii" name="current time" typeRef="ilog.rules.brl.Date"/>
+    </inputData>
+    <decision id="node_8" name="Corporate Score">
+        <description>Calculate the corporate score of the borrower based on their bankruptcy score, salary score and credit score</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="Borrower" collection="false" name="Borrower"/>
+                <input bomType="java.lang.Double" collection="false" name="Salary Score"/>
+                <input bomType="java.lang.Double" collection="false" name="Bankruptcy Score"/>
+                <output bomType="java.lang.Double" collection="false" name="Corporate Score"/>
+                <rule defaultRule="false" href="node_8/corporate%20score.drl" kind="BusinessRule" name="corporate score"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_8_ii" name="Corporate Score" typeRef="java.lang.Double"/>
+        <informationRequirement>
+            <requiredInput href="#node_4"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_5"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_6"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_9" name="Grade">
+        <description>Decide the grade and risk level of the loan request based on the repayment and corporate score of the borrower</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.Double" collection="false" name="Repayment"/>
+                <input bomType="java.lang.Double" collection="false" name="Corporate Score"/>
+                <output bomType="Grade" collection="false" name="Grade"/>
+                <rule defaultRule="false" href="node_9/grade.dmt" kind="DecisionTable" name="grade"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_9_ii" name="Grade" typeRef="Grade"/>
+        <informationRequirement>
+            <requiredInput href="#node_3"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_8"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_10" name="Insurance">
+        <description>Calculate the insurance rate for the loan based on the grade and amount of the loan</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="Loan" collection="false" name="Loan"/>
+                <input bomType="Grade" collection="false" name="Grade"/>
+                <output bomType="Insurance" collection="false" name="Insurance"/>
+                <rule defaultRule="false" href="node_10/insurance.dmt" kind="DecisionTable" name="insurance"/>
+                <rule defaultRule="true" href="node_10/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_10_ii" name="Insurance" typeRef="Insurance"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_9"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_11" name="Approval">
+        <description>Decide if the loan is approved or rejected.</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="Loan" collection="false" name="Loan"/>
+                <input bomType="java.lang.Double" collection="false" name="Repayment"/>
+                <input bomType="Borrower" collection="false" name="Borrower"/>
+                <input bomType="ilog.rules.brl.Date" collection="false" name="current time"/>
+                <input bomType="Grade" collection="false" name="Grade"/>
+                <output bomType="Approval" collection="false" name="Approval"/>
+                <rule defaultRule="false" href="node_11/bad%20score.drl" kind="BusinessRule" name="bad score"/>
+                <rule defaultRule="false" href="node_11/risky%20grade.drl" kind="BusinessRule" name="risky grade"/>
+                <rule defaultRule="false" href="node_11/too%20big%20Debt%20to%20Income%20ratio.drl" kind="BusinessRule" name="too big Debt to Income ratio"/>
+                <rule defaultRule="false" href="node_11/age%20not%20valid.drl" kind="BusinessRule" name="age not valid"/>
+                <rule defaultRule="false" href="node_11/no%20name.drl" kind="BusinessRule" name="no name"/>
+                <rule defaultRule="false" href="node_11/wrong%20SSN.drl" kind="BusinessRule" name="wrong SSN"/>
+                <rule defaultRule="false" href="node_11/wrong%20SSN%20format.drl" kind="BusinessRule" name="wrong SSN format"/>
+                <rule defaultRule="false" href="node_11/wrong%20zip%20format%20.drl" kind="BusinessRule" name="wrong zip format "/>
+                <rule defaultRule="false" href="node_11/max%20amount%20exceeded.drl" kind="BusinessRule" name="max amount exceeded"/>
+                <rule defaultRule="true" href="node_11/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_11_ii" name="Approval" typeRef="Approval"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_3"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_4"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_7"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_9"/>
+        </informationRequirement>
+    </decision>
+</definitions></definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

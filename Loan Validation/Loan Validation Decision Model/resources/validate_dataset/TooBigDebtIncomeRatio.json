@@ -1,0 +1,21 @@
+{
+  "loan": {
+    "loan to value": 0.7,
+    "number of monthly payments": 72,
+    "start date": "2005-06-01T00:00:00Z",
+    "amount": 200000
+  },
+  "borrower": {
+    "first name": "John",
+    "last name": "Doe",
+    "birth date": "1968-05-12T00:00:00Z",
+    "SSN": {
+      "area number": "123",
+      "group code": "45",
+      "serial number": "6789"
+    },
+    "yearly income": 100000,
+    "zip code": "91320",
+    "credit score": 700
+  }
+}
