@@ -1,0 +1,28 @@
+{
+  "metadata" : {
+    "id" : "be7d3d69-7ede-4b96-8977-2f141777f34c",
+    "name" : "Lifetime value",
+    "modified_at" : "2021-12-02T12:49:45.128Z",
+    "created_at" : "2021-12-02T12:49:45.128Z",
+    "owner" : "IBMid-270002541S",
+    "space_id" : "374efdfd-7a04-432d-9bc1-fec6d6e56d30"
+  },
+  "entity" : {
+    "name" : "Lifetime value",
+    "space_id" : "374efdfd-7a04-432d-9bc1-fec6d6e56d30",
+    "custom" : { },
+    "online" : { },
+    "status" : {
+      "state" : "ready",
+      "online_url" : {
+        "url" : "https://eu-gb.ml.cloud.ibm.com/ml/v4/deployments/be7d3d69-7ede-4b96-8977-2f141777f34c/predictions"
+      }
+    },
+    "asset" : {
+      "id" : "470e7b67-7428-4e19-aa8b-7bf26a857ffa"
+    }
+  },
+  "name" : "Lifetime value",
+  "status" : "ready",
+  "deployedAt" : "2021-12-02T12:49:45.128Z"
+}

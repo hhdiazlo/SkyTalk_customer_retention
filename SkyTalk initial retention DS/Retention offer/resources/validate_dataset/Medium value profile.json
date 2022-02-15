@@ -1,0 +1,20 @@
+{
+  "customer": {
+    "gender": "M",
+    "location": "urban",
+    "marital_status": "S",
+    "name": "Peter",
+    "estimated_income": 64000,
+    "car_owner": true,
+    "age": 49,
+    "household": 4
+  },
+  "subscription": {
+    "international_calls": 30,
+    "local_calls": 15,
+    "rate_plan": "Essentials",
+    "long_distance_calls": 35,
+    "payment_method": "CC",
+    "usage": 80
+  }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Customer Lifetime Value">
+  <name>customerLifetimeValue</name>
+  <uuid>41099e23-dd06-4b68-90e0-fad216c05249</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#b64b8f19-d94d-40eb-9ab6-bba3a6b4a8c8"/>
+  <targetRuleProject href="../../Customer%20Lifetime%20Value#7f58083c-9a9a-4579-9961-f6da7025fb3c"/>
+  <tags key="ProviderType">
+    <value><![CDATA[OPS]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

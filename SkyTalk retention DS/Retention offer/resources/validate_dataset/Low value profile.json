@@ -1,0 +1,20 @@
+{
+  "customer": {
+    "gender": "M",
+    "location": "urban",
+    "name": "John",
+    "estimated_income": 56000,
+    "car_owner": true,
+    "age": 43,
+    "household": 0,
+    "marital_status": "M"
+  },
+  "subscription": {
+    "international_calls": 30,
+    "local_calls": 32,
+    "rate_plan": "Gold",
+    "long_distance_calls": 43,
+    "payment_method": "CC",
+    "usage": 300
+  }
+}

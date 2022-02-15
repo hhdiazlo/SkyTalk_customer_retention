@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>car owner</name>
+  <uuid>e44343cf-d306-4460-99ef-d4fad50ab82b</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+    Customer is car owner is true
+then
+    set the car owner of decision to "T" ;
+else
+    set the car owner of decision to "F" ;
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

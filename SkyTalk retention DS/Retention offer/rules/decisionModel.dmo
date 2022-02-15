@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>4d8608da-050d-4d72-9c60-fc57307e0a33</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_0" name="Customer">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="CustomerRecord" collection="false" name="Customer"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_0_ii" name="Customer" typeRef="CustomerRecord"/>
+    </inputData>
+    <decision id="node_1" name="Operation cost">
+        <description>Indicate whether this customer costs a lot or not.</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="CustomerRecord" collection="false" name="Customer"/>
+                <input bomType="Subscription" collection="false" name="Subscription"/>
+                <output bomType="java.lang.Double" collection="false" name="Operation cost"/>
+                <rule defaultRule="false" href="node_1/location%20table.dmt" kind="DecisionTable" name="location table"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="Operation cost" typeRef="java.lang.Double"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_2" name="Subscription">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="Subscription" collection="false" name="Subscription"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_2_ii" name="Subscription" typeRef="Subscription"/>
+    </inputData>
+    <decision id="node_3" name="Upgrade policy">
+        <description>If we had to propose an upgrade, what would be the most logical upgrade.</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="Subscription" collection="false" name="Subscription"/>
+                <output bomType="java.lang.String" collection="false" name="Upgrade policy"/>
+                <rule defaultRule="true" href="node_3/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+                <rule defaultRule="false" href="node_3/Upgrade%20eligibility%20table.dmt" kind="DecisionTable" name="Upgrade eligibility table"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_3_ii" name="Upgrade policy" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_4" name="Ranked retention offers">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="CustomerRecord" collection="false" name="Customer"/>
+                <input bomType="java.lang.Double" collection="false" name="Operation cost"/>
+                <input bomType="Subscription" collection="false" name="Subscription"/>
+                <input bomType="java.lang.String" collection="false" name="Upgrade policy"/>
+                <output bomType="Offer" collection="true" name="Ranked retention offers"/>
+                <rule defaultRule="false" href="node_4/Send%20survey.drl" kind="BusinessRule" name="Send survey"/>
+                <rule defaultRule="false" href="node_4/Discount%20for%20low%20cost%20operations.drl" kind="BusinessRule" name="Discount for low cost operations"/>
+                <rule defaultRule="false" href="node_4/Upgrade.drl" kind="BusinessRule" name="Upgrade"/>
+                <rule defaultRule="false" href="node_4/High%20discount.drl" kind="BusinessRule" name="High discount"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_4_ii" name="Ranked retention offers" typeRef="Offer[]"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_1"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_3"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_5" name="Retention budget">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="CustomerRecord" collection="false" name="Customer"/>
+                <input bomType="java.lang.Double" collection="false" name="Operation cost"/>
+                <input bomType="Subscription" collection="false" name="Subscription"/>
+                <output bomType="java.lang.Double" collection="false" name="Retention budget"/>
+                <rule defaultRule="false" href="node_5/Estimate%20retention%20cost.drl" kind="BusinessRule" name="Estimate retention cost"/>
+                <rule defaultRule="false" href="node_5/Include%20operation%20cost.drl" kind="BusinessRule" name="Include operation cost"/>
+                <rule defaultRule="true" href="node_5/Default%20value.drl" kind="BusinessRule" name="Default value"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_5_ii" name="Retention budget" typeRef="java.lang.Double"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_1"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+        <knowledgeRequirement>
+            <requiredKnowledge href="#node_7"/>
+        </knowledgeRequirement>
+        <knowledgeRequirement>
+            <requiredKnowledge href="#node_8"/>
+        </knowledgeRequirement>
+    </decision>
+    <decision id="node_6" name="Determine retention offer">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="Offer" collection="true" name="Ranked retention offers"/>
+                <input bomType="java.lang.Double" collection="false" name="Retention budget"/>
+                <output bomType="Offer" collection="false" name="Determine retention offer"/>
+                <rule defaultRule="false" href="node_6/Default%20offer.drl" kind="BusinessRule" name="Default offer"/>
+                <rule defaultRule="false" href="node_6/Select%20best%20offer.drl" kind="BusinessRule" name="Select best offer"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_6_ii" name="Determine retention offer" typeRef="Offer"/>
+        <informationRequirement>
+            <requiredInput href="#node_4"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_5"/>
+        </informationRequirement>
+    </decision>
+    <businessKnowledgeModel id="node_7" name="Customer Churn">
+        <extensionElements>
+            <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <property name="ads.designer.bkKind"><![CDATA[prediction]]></property>
+            </properties>
+        </extensionElements>
+        <variable name="Customer Churn" typeRef="java.lang.Double"/>
+        <encapsulatedLogic typeRef="java.lang.Double">
+            <formalParameter name="customer" typeRef="CustomerRecord"/>
+            <formalParameter name="subscription" typeRef="Subscription"/>
+            <context>
+                <contextEntry>
+                    <variable name="class"/>
+                    <literalExpression>
+                        <text>"decisions.mlsamples.telco_retention.customerChurn.CustomerChurn"</text>
+                    </literalExpression>
+                </contextEntry>
+                <contextEntry>
+                    <variable name="method signature"/>
+                    <literalExpression>
+                        <text>"run(CustomerRecord,Subscription)"</text>
+                    </literalExpression>
+                </contextEntry>
+            </context>
+        </encapsulatedLogic>
+    </businessKnowledgeModel>
+    <businessKnowledgeModel id="node_8" name="Customer Lifetime Value">
+        <extensionElements>
+            <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <property name="ads.designer.bkKind"><![CDATA[prediction]]></property>
+            </properties>
+        </extensionElements>
+        <variable name="Customer Lifetime Value" typeRef="java.lang.Double"/>
+        <encapsulatedLogic typeRef="java.lang.Double">
+            <formalParameter name="customer" typeRef="CustomerRecord"/>
+            <formalParameter name="subscription" typeRef="Subscription"/>
+            <context>
+                <contextEntry>
+                    <variable name="class"/>
+                    <literalExpression>
+                        <text>"decisions.mlsamples.telco_retention.customerLifetimeValue.CustomerLifetimeValue"</text>
+                    </literalExpression>
+                </contextEntry>
+                <contextEntry>
+                    <variable name="method signature"/>
+                    <literalExpression>
+                        <text>"run(CustomerRecord,Subscription)"</text>
+                    </literalExpression>
+                </contextEntry>
+            </context>
+        </encapsulatedLogic>
+    </businessKnowledgeModel>
+</definitions></definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

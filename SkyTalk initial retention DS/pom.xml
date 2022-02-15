@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>decisions.skytalk_customer_retention_ds.skytalk_initial_retention_ds</groupId>
+    <artifactId>skyTalkInitialRetentionDS</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <packaging>pom</packaging>
+
+    <properties>
+        <engine-compact-runtime.version>2.8.1</engine-compact-runtime.version>
+        <maven-shade-plugin.version>3.2.4</maven-shade-plugin.version>
+        <ml-integration-runtime.version>11.0.7</ml-integration-runtime.version>
+        <ads-mojo.version>4.6.2</ads-mojo.version>
+        <maven-dependency-plugin.version>3.1.2</maven-dependency-plugin.version>
+    <engine-api.version>2.8.0</engine-api.version>
+        <buildTime>${maven.build.timestamp}</buildTime>
+        <maven.build.timestamp.format>yyyy-MM-dd'T'HH:mm:ss'Z'</maven.build.timestamp.format>
+    </properties>
+    <modules>
+        <module>Data</module>
+        <module>Retention offer</module>
+        <module>.decisionservice</module>
+    </modules>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.ibm.decision</groupId>
+                    <artifactId>build-maven-plugin</artifactId>
+                    <version>${ads-mojo.version}</version>
+                    <extensions>true</extensions>
+                <dependencies>
+                        <dependency>
+                            <groupId>com.ibm.decision</groupId>
+                            <artifactId>ml-integration-runtime</artifactId>
+                            <version>${ml-integration-runtime.version}</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+  
+ <distributionManagement>
+        <snapshotRepository>
+            <id>maven-snapshots</id>
+            <url>http://nexus.cicd.apps.ads2101-demo.cp.fyre.ibm.com/repository/maven-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>maven-releases</id>
+            <url>http://nexus.cicd.apps.ads2101-demo.cp.fyre.ibm.com/repository/maven-releases/</url>
+        </repository>
+    </distributionManagement>
+</project>

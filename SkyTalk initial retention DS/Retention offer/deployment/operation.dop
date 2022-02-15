@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Retention offer">
+  <name>retentionOffer</name>
+  <uuid>049ef349-deeb-42c6-a26a-a6fbe3a61cb1</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#4d8608da-050d-4d72-9c60-fc57307e0a33"/>
+  <targetRuleProject href="../../Retention%20offer#e0741390-d82a-4154-aac4-fc9bbeb3e3b0"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["retentionOffer"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

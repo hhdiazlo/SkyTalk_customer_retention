@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Send survey</name>
+  <uuid>c71d0ca7-158d-4dd1-ae9f-976b9c7fc0a9</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[add a new offer where 
+
+    the message is "Send " + the name + " a customer satisfaction survey.",
+    the estimated cost is 0
+
+ to decision ;
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

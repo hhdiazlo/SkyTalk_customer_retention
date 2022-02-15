@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Default offer</name>
+  <uuid>36d53065-1fd3-4b0d-b2e2-a1ba23901673</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set decision to a new offer where
+        the estimated cost is 0, 
+        the message is "No offer for this customer" ;
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

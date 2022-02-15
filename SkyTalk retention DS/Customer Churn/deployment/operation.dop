@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Customer Churn">
+  <name>customerChurn</name>
+  <uuid>6fe198b6-d635-4638-afd2-53de1f77d888</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#1b4a9d8c-8a04-427a-96f2-69357742a50f"/>
+  <targetRuleProject href="../../Customer%20Churn#708d9126-ad63-4645-9d39-291af1012065"/>
+  <tags key="ProviderType">
+    <value><![CDATA[OPS]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

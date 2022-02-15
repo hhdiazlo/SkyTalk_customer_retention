@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>size importance</name>
+  <uuid>a24d1899-1dbd-44a9-af6d-0050820fe256</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+
+-- Get prediction from predictive model
+set LifeTimeValue to the customer lifetime value computed from
+      Customer being Customer, 
+      Subscription being Subscription ;
+      
+-- Get churn prediction from predictive model
+set Churn to the customer churn computed from
+      Customer being Customer, 
+      Subscription being Subscription ;
+      
+-- Estimate monthly customer value (based on a 5 years Lifetime value)
+set 'monthly value' to LifeTimeValue / (12*5) ;
+
+-- Adjusted monthly customer value
+set 'adjusted value' to 'monthly value' * Churn ;
+
+--integrate margin 
+if Churn is less than 0.7 then 
+	-- The retention budget cannot exceed 50% of the monthly customer value
+   set decision to 'adjusted value' * 0.5;
+   print "Lifetime value: "+LifeTimeValue;
+   print "Churn: "+Churn;
+   
+    -- The retention budget cannot exceed 75% of the monthly customer value
+else set decision to 'adjusted value'* 0.75;
+    print "Lifetime value: "+LifeTimeValue;
+    print "Churn: "+Churn;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

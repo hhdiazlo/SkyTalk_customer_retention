@@ -1,0 +1,49 @@
+{
+  "id" : "auto_ai_kb_input_schema",
+  "fields" : [ {
+    "name" : "Gender",
+    "type" : "other",
+    "nullable" : true,
+    "jsonName" : "Gender"
+  }, {
+    "name" : "Status",
+    "type" : "other",
+    "nullable" : true,
+    "jsonName" : "Status"
+  }, {
+    "name" : "Household",
+    "type" : "integer",
+    "nullable" : true,
+    "jsonName" : "Household"
+  }, {
+    "name" : "Est Income",
+    "type" : "double",
+    "nullable" : true,
+    "jsonName" : "Est Income"
+  }, {
+    "name" : "Car Owner",
+    "type" : "other",
+    "nullable" : true,
+    "jsonName" : "Car Owner"
+  }, {
+    "name" : "Age",
+    "type" : "double",
+    "nullable" : true,
+    "jsonName" : "Age"
+  }, {
+    "name" : "Paymethod",
+    "type" : "other",
+    "nullable" : true,
+    "jsonName" : "Paymethod"
+  }, {
+    "name" : "Usage",
+    "type" : "double",
+    "nullable" : true,
+    "jsonName" : "Usage"
+  }, {
+    "name" : "RatePlan",
+    "type" : "integer",
+    "nullable" : true,
+    "jsonName" : "RatePlan"
+  } ]
+}

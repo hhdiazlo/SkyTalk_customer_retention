@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>mapping</name>
+  <uuid>2b5db91b-5f50-401a-b45c-7ec782af833a</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set decision to a new ML model input where
+        the age is the age, 
+        the car owner is "" , 
+        the household is the household , 
+        the est income is the estimated income, 
+        the gender is the gender, 
+        the paymethod is the payment method, 
+        the rateplan is 0, 
+        the status is the marital status, 
+        the usage is the usage ;
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

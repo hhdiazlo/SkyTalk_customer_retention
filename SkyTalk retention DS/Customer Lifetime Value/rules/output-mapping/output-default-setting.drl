@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>output-default-setting</name>
+  <uuid>691f2c4a-108c-4433-8625-1683c1600c63</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set decision to the prediction of 'ML model invocation' ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

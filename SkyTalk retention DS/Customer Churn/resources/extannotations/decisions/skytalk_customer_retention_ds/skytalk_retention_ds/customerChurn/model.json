@@ -1,0 +1,69 @@
+{
+  "metadata" : {
+    "id" : "d06df8a1-173d-4d92-983f-d371d159df34",
+    "name" : "SkyTalk churn prediction - P1 LGBM Classifier",
+    "modified_at" : "2021-11-17T15:06:10.848Z",
+    "created_at" : "2021-11-17T15:06:10.568Z",
+    "owner" : "IBMid-270002541S",
+    "space_id" : "374efdfd-7a04-432d-9bc1-fec6d6e56d30"
+  },
+  "entity" : {
+    "label_column" : "CHURN",
+    "content_import_state" : "completed",
+    "metrics" : [ {
+      "timestamp" : "2021-11-17T14:46:00.000Z",
+      "ml_metrics" : { },
+      "context" : {
+        "phase" : "pre_hpo_d_output"
+      }
+    } ],
+    "type" : "wml-hybrid_0.1",
+    "schemas" : {
+      "input" : [ {
+        "id" : "auto_ai_kb_input_schema",
+        "fields" : [ {
+          "name" : "Gender",
+          "type" : "other",
+          "nullable" : true
+        }, {
+          "name" : "Status",
+          "type" : "other",
+          "nullable" : true
+        }, {
+          "name" : "Household",
+          "type" : "integer",
+          "nullable" : true
+        }, {
+          "name" : "Est Income",
+          "type" : "double",
+          "nullable" : true
+        }, {
+          "name" : "Car Owner",
+          "type" : "other",
+          "nullable" : true
+        }, {
+          "name" : "Age",
+          "type" : "double",
+          "nullable" : true
+        }, {
+          "name" : "Paymethod",
+          "type" : "other",
+          "nullable" : true
+        }, {
+          "name" : "Usage",
+          "type" : "double",
+          "nullable" : true
+        }, {
+          "name" : "RatePlan",
+          "type" : "integer",
+          "nullable" : true
+        } ]
+      } ],
+      "output" : [ ]
+    }
+  },
+  "id" : "d06df8a1-173d-4d92-983f-d371d159df34",
+  "name" : "SkyTalk churn prediction - P1 LGBM Classifier",
+  "trainedAt" : "2021-11-17T15:06:10.568Z",
+  "modifiedAt" : "2021-11-17T15:06:10.848Z"
+}

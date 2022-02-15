@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>get prediction</name>
+  <uuid>7aaac3cc-7dd8-4497-9dbe-f3170c4b4b3f</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if 
+    the prediction of 'ML model invocation' is "T"
+    -- the customer will churn
+then
+    set decision to the maximum probability of 'ML model invocation' ;
+else
+    set decision to 1 - the maximum probability of 'ML model invocation' ;
+]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>
