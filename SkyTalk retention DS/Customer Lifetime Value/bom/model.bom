@@ -93,8 +93,8 @@ public class Output
                 property "de.generated" {
                     $gen "com.ibm.decision.ml.integration.xom.PredictionRunGenerator",
                     $target "BOM",
-                    deploymentId "be7d3d69-7ede-4b96-8977-2f141777f34c",
-                    providerName "decisions/SkyTalk-customer-retention-DS/Laurent_tarin ML Provider1636467124394"
+                    deploymentId "43ca8174-0532-42c0-aaaa-da75441f0331",
+                    providerName "decisions/SkyTalk-customer-retention-DS/SkyTalk ML provider1644990829330"
                 }
                 property pureFunction "true";
 }
