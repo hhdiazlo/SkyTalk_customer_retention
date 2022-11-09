@@ -1,1 +1,14 @@
-{"description":"Validate loans based on the borrower data and compute insurance rates for the requested loan amounts.","locale":"en_US","properties":{"tags":[{"text":"Sample","type":"cool-gray"},{"text":"Banking","type":"purple"}]}}
+{
+  "description" : "Validate loans based on the borrower data and compute insurance rates for the requested loan amounts.",
+  "locale" : "en_US",
+  "properties" : {
+    "tags" : [ {
+      "text" : "Sample",
+      "type" : "cool-gray"
+    }, {
+      "text" : "Banking",
+      "type" : "purple"
+    } ]
+  },
+  "groupId" : "cp4admin.skytalk.loan_validation"
+}

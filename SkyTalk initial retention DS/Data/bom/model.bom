@@ -1,4 +1,6 @@
 
+package decisions.mlsamples.telco_retention.data;
+
 
 public class CustomerRecord
         property "ads.typeId" "1"
@@ -21,7 +23,7 @@ public class CustomerRecord
                 property "ads.attributeId" "1"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "household"
                 property update "true";
-    public Location location
+    public decisions.mlsamples.telco_retention.data.Location location
                 property "ads.attributeId" "3"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "location"
                 property update "true";
@@ -37,7 +39,7 @@ public class CustomerRecord
                 property "ads.attributeId" "8"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "age"
                 property update "true";
-    public CustomerRecord(boolean car_owner, double estimated_income, string gender, Location location, string marital_status, string name, java.lang.Long household, double newAttribute2)
+    public CustomerRecord(boolean car_owner, double estimated_income, string gender, java.lang.Long household, decisions.mlsamples.telco_retention.data.Location location, string marital_status, string name, double newAttribute2)
                 property autoExpand "true"
                 property beanConstructor "true"
                 property groups "BALA"
@@ -53,13 +55,13 @@ public class Location
         property "de.generated" "true"
 {
     domain {static country, static suburban, static urban}
-    public static final readonly Location country
+    public static final readonly decisions.mlsamples.telco_retention.data.Location country
                 property "ads.attributeId" "1"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "country";
-    public static final readonly Location suburban
+    public static final readonly decisions.mlsamples.telco_retention.data.Location suburban
                 property "ads.attributeId" "2"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "suburban";
-    public static final readonly Location urban
+    public static final readonly decisions.mlsamples.telco_retention.data.Location urban
                 property "ads.attributeId" "3"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "urban";
 }
@@ -93,16 +95,16 @@ public class Rate_plan
         property "de.generated" "true"
 {
     domain {static basic, static essentials, static gold, static premium}
-    public static final readonly Rate_plan basic
+    public static final readonly decisions.mlsamples.telco_retention.data.Rate_plan basic
                 property "ads.attributeId" "1"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "Basic";
-    public static final readonly Rate_plan essentials
+    public static final readonly decisions.mlsamples.telco_retention.data.Rate_plan essentials
                 property "ads.attributeId" "2"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "Essentials";
-    public static final readonly Rate_plan gold
+    public static final readonly decisions.mlsamples.telco_retention.data.Rate_plan gold
                 property "ads.attributeId" "3"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "Gold";
-    public static final readonly Rate_plan premium
+    public static final readonly decisions.mlsamples.telco_retention.data.Rate_plan premium
                 property "ads.attributeId" "4"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "Premium";
 }
@@ -128,7 +130,7 @@ public class Subscription
                 property "ads.attributeId" "5"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "payment_method"
                 property update "true";
-    public Rate_plan rate_plan
+    public decisions.mlsamples.telco_retention.data.Rate_plan rate_plan
                 property "ads.attributeId" "3"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "rate_plan"
                 property update "true";
@@ -136,7 +138,7 @@ public class Subscription
                 property "ads.attributeId" "6"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "usage"
                 property update "true";
-    public Subscription(double international_calls, double local_calls, double long_distance_calls, string payment_method, Rate_plan rate_plan, double usage)
+    public Subscription(double international_calls, double local_calls, double long_distance_calls, string payment_method, decisions.mlsamples.telco_retention.data.Rate_plan rate_plan, double usage)
                 property autoExpand "true"
                 property beanConstructor "true"
                 property groups "BALA"

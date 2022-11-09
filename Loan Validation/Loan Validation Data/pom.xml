@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>decisions.skytalk_customer_retention_ds.loan_validation</groupId>
+        <groupId>cp4admin.skytalk.loan_validation</groupId>
         <artifactId>loanValidation</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
@@ -10,13 +10,20 @@
     <groupId>decisions.techpreview_samples.loan_validation</groupId>
     <artifactId>loanValidationData</artifactId>
     <version>LATEST-SNAPSHOT</version>
-    <packaging>decision-library</packaging>
+    
 
     <build>
         <plugins>
             <plugin>
                 <groupId>com.ibm.decision</groupId>
                 <artifactId>build-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>export</goal>
+                        </goals>
+                    </execution>
+                </executions>
                 <configuration>
                     <deployments>
                         <deployment>
@@ -29,5 +36,26 @@
         </plugins>
     </build>
 
-<dependencies/>
+<dependencies>
+        <dependency>
+            <groupId>com.ibm.decision</groupId>
+            <artifactId>engine-compact-runtime</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm.decision</groupId>
+            <artifactId>engine-de-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jsr310</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+        </dependency>
+    </dependencies>
 </project>

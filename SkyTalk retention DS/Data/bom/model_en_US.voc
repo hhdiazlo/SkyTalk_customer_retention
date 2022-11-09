@@ -1,80 +1,80 @@
 
-# CustomerRecord
-CustomerRecord#concept.label = customerRecord
-CustomerRecord.CustomerRecord(boolean,double,java.lang.String,Location,java.lang.String,java.lang.String,java.lang.Long,double)#phrase.navigation = a new {customerRecord} where {0, car owner} {1, estimated income} {2, gender} {3, location} {4, marital status} {5, name} {6, household} {7, age}
-CustomerRecord.car_owner#phrase.action[0] = {this} gets car owner only if {car owner}
-CustomerRecord.car_owner#phrase.action[1] = make it {car owner} that {this} is car owner
-CustomerRecord.car_owner#phrase.action[1].deprecated = true
-CustomerRecord.car_owner#phrase.navigation = {this} is car owner
-CustomerRecord.car_owner#phrase.negative_predicate = {this} is not car owner
-CustomerRecord.car_owner#phrase.negative_predicate_setter = {this} does not get car owner
-CustomerRecord.car_owner#phrase.positive_predicate_setter = {this} gets car owner
-CustomerRecord.estimated_income#phrase.action = set the estimated income of {this} to {estimated income}
-CustomerRecord.estimated_income#phrase.addition_setter = add {estimated income} to the estimated income of {this}
-CustomerRecord.estimated_income#phrase.navigation = {estimated income} of {this}
-CustomerRecord.estimated_income#phrase.subtraction_setter = subtract {estimated income} from the estimated income of {this}
-CustomerRecord.gender#phrase.action = set the gender of {this} to {gender}
-CustomerRecord.gender#phrase.navigation = {gender} of {this}
-CustomerRecord.household#phrase.action = set the household of {this} to {household}
-CustomerRecord.household#phrase.addition_setter = add {household} to the household of {this}
-CustomerRecord.household#phrase.navigation = {household} of {this}
-CustomerRecord.household#phrase.subtraction_setter = subtract {household} from the household of {this}
-CustomerRecord.location#phrase.action = set the location of {this} to {location}
-CustomerRecord.location#phrase.clearer = clear the location of {this}
-CustomerRecord.location#phrase.navigation = {location} of {this}
-CustomerRecord.marital_status#phrase.action = set the marital status of {this} to {marital status}
-CustomerRecord.marital_status#phrase.navigation = {marital status} of {this}
-CustomerRecord.name#phrase.action = set the name of {this} to {name}
-CustomerRecord.name#phrase.navigation = {name} of {this}
-CustomerRecord.newAttribute2#phrase.action = set the age of {this} to {age}
-CustomerRecord.newAttribute2#phrase.addition_setter = add {age} to the age of {this}
-CustomerRecord.newAttribute2#phrase.navigation = {age} of {this}
-CustomerRecord.newAttribute2#phrase.subtraction_setter = subtract {age} from the age of {this}
+# decisions.mlsamples.telco_retention.data.CustomerRecord
+decisions.mlsamples.telco_retention.data.CustomerRecord#concept.label = customerRecord
+decisions.mlsamples.telco_retention.data.CustomerRecord.CustomerRecord(boolean,double,java.lang.String,java.lang.Long,decisions.mlsamples.telco_retention.data.Location,java.lang.String,java.lang.String,double)#phrase.navigation = a new {customerRecord} where {0, car owner} {1, estimated income} {2, gender} {3, household} {4, location} {5, marital status} {6, name} {7, age}
+decisions.mlsamples.telco_retention.data.CustomerRecord.car_owner#phrase.action[0] = {this} gets car owner only if {car owner}
+decisions.mlsamples.telco_retention.data.CustomerRecord.car_owner#phrase.action[1] = make it {car owner} that {this} is car owner
+decisions.mlsamples.telco_retention.data.CustomerRecord.car_owner#phrase.action[1].deprecated = true
+decisions.mlsamples.telco_retention.data.CustomerRecord.car_owner#phrase.navigation = {this} is car owner
+decisions.mlsamples.telco_retention.data.CustomerRecord.car_owner#phrase.negative_predicate = {this} is not car owner
+decisions.mlsamples.telco_retention.data.CustomerRecord.car_owner#phrase.negative_predicate_setter = {this} does not get car owner
+decisions.mlsamples.telco_retention.data.CustomerRecord.car_owner#phrase.positive_predicate_setter = {this} gets car owner
+decisions.mlsamples.telco_retention.data.CustomerRecord.estimated_income#phrase.action = set the estimated income of {this} to {estimated income}
+decisions.mlsamples.telco_retention.data.CustomerRecord.estimated_income#phrase.addition_setter = add {estimated income} to the estimated income of {this}
+decisions.mlsamples.telco_retention.data.CustomerRecord.estimated_income#phrase.navigation = {estimated income} of {this}
+decisions.mlsamples.telco_retention.data.CustomerRecord.estimated_income#phrase.subtraction_setter = subtract {estimated income} from the estimated income of {this}
+decisions.mlsamples.telco_retention.data.CustomerRecord.gender#phrase.action = set the gender of {this} to {gender}
+decisions.mlsamples.telco_retention.data.CustomerRecord.gender#phrase.navigation = {gender} of {this}
+decisions.mlsamples.telco_retention.data.CustomerRecord.household#phrase.action = set the household of {this} to {household}
+decisions.mlsamples.telco_retention.data.CustomerRecord.household#phrase.addition_setter = add {household} to the household of {this}
+decisions.mlsamples.telco_retention.data.CustomerRecord.household#phrase.navigation = {household} of {this}
+decisions.mlsamples.telco_retention.data.CustomerRecord.household#phrase.subtraction_setter = subtract {household} from the household of {this}
+decisions.mlsamples.telco_retention.data.CustomerRecord.location#phrase.action = set the location of {this} to {location}
+decisions.mlsamples.telco_retention.data.CustomerRecord.location#phrase.clearer = clear the location of {this}
+decisions.mlsamples.telco_retention.data.CustomerRecord.location#phrase.navigation = {location} of {this}
+decisions.mlsamples.telco_retention.data.CustomerRecord.marital_status#phrase.action = set the marital status of {this} to {marital status}
+decisions.mlsamples.telco_retention.data.CustomerRecord.marital_status#phrase.navigation = {marital status} of {this}
+decisions.mlsamples.telco_retention.data.CustomerRecord.name#phrase.action = set the name of {this} to {name}
+decisions.mlsamples.telco_retention.data.CustomerRecord.name#phrase.navigation = {name} of {this}
+decisions.mlsamples.telco_retention.data.CustomerRecord.newAttribute2#phrase.action = set the age of {this} to {age}
+decisions.mlsamples.telco_retention.data.CustomerRecord.newAttribute2#phrase.addition_setter = add {age} to the age of {this}
+decisions.mlsamples.telco_retention.data.CustomerRecord.newAttribute2#phrase.navigation = {age} of {this}
+decisions.mlsamples.telco_retention.data.CustomerRecord.newAttribute2#phrase.subtraction_setter = subtract {age} from the age of {this}
 
-# Location
-Location#concept.label = location
-Location.country#instance.label = country
-Location.suburban#instance.label = suburban
-Location.urban#instance.label = urban
+# decisions.mlsamples.telco_retention.data.Location
+decisions.mlsamples.telco_retention.data.Location#concept.label = location
+decisions.mlsamples.telco_retention.data.Location.country#instance.label = country
+decisions.mlsamples.telco_retention.data.Location.suburban#instance.label = suburban
+decisions.mlsamples.telco_retention.data.Location.urban#instance.label = urban
 
-# Offer
-Offer#concept.label = offer
-Offer.Offer(double,java.lang.String)#phrase.navigation = a new {offer} where {0, estimated cost} {1, message}
-Offer.estimated_cost#phrase.action = set the estimated cost of {this} to {estimated cost}
-Offer.estimated_cost#phrase.addition_setter = add {estimated cost} to the estimated cost of {this}
-Offer.estimated_cost#phrase.navigation = {estimated cost} of {this}
-Offer.estimated_cost#phrase.subtraction_setter = subtract {estimated cost} from the estimated cost of {this}
-Offer.message#phrase.action = set the message of {this} to {message}
-Offer.message#phrase.navigation = {message} of {this}
+# decisions.mlsamples.telco_retention.data.Offer
+decisions.mlsamples.telco_retention.data.Offer#concept.label = offer
+decisions.mlsamples.telco_retention.data.Offer.Offer(double,java.lang.String)#phrase.navigation = a new {offer} where {0, estimated cost} {1, message}
+decisions.mlsamples.telco_retention.data.Offer.estimated_cost#phrase.action = set the estimated cost of {this} to {estimated cost}
+decisions.mlsamples.telco_retention.data.Offer.estimated_cost#phrase.addition_setter = add {estimated cost} to the estimated cost of {this}
+decisions.mlsamples.telco_retention.data.Offer.estimated_cost#phrase.navigation = {estimated cost} of {this}
+decisions.mlsamples.telco_retention.data.Offer.estimated_cost#phrase.subtraction_setter = subtract {estimated cost} from the estimated cost of {this}
+decisions.mlsamples.telco_retention.data.Offer.message#phrase.action = set the message of {this} to {message}
+decisions.mlsamples.telco_retention.data.Offer.message#phrase.navigation = {message} of {this}
 
-# Rate_plan
-Rate_plan#concept.label = rate plan
-Rate_plan.basic#instance.label = Basic
-Rate_plan.essentials#instance.label = Essentials
-Rate_plan.gold#instance.label = Gold
-Rate_plan.premium#instance.label = Premium
+# decisions.mlsamples.telco_retention.data.Rate_plan
+decisions.mlsamples.telco_retention.data.Rate_plan#concept.label = rate plan
+decisions.mlsamples.telco_retention.data.Rate_plan.basic#instance.label = Basic
+decisions.mlsamples.telco_retention.data.Rate_plan.essentials#instance.label = Essentials
+decisions.mlsamples.telco_retention.data.Rate_plan.gold#instance.label = Gold
+decisions.mlsamples.telco_retention.data.Rate_plan.premium#instance.label = Premium
 
-# Subscription
-Subscription#concept.label = subscription
-Subscription.Subscription(double,double,double,java.lang.String,Rate_plan,double)#phrase.navigation = a new {subscription} where {0, international calls} {1, local calls} {2, long distance calls} {3, payment method} {4, rate plan} {5, usage}
-Subscription.international_calls#phrase.action = set the international calls of {this} to {international calls}
-Subscription.international_calls#phrase.addition_setter = add {international calls} to the international calls of {this}
-Subscription.international_calls#phrase.navigation = {international calls} of {this}
-Subscription.international_calls#phrase.subtraction_setter = subtract {international calls} from the international calls of {this}
-Subscription.local_calls#phrase.action = set the local calls of {this} to {local calls}
-Subscription.local_calls#phrase.addition_setter = add {local calls} to the local calls of {this}
-Subscription.local_calls#phrase.navigation = {local calls} of {this}
-Subscription.local_calls#phrase.subtraction_setter = subtract {local calls} from the local calls of {this}
-Subscription.long_distance_calls#phrase.action = set the long distance calls of {this} to {long distance calls}
-Subscription.long_distance_calls#phrase.addition_setter = add {long distance calls} to the long distance calls of {this}
-Subscription.long_distance_calls#phrase.navigation = {long distance calls} of {this}
-Subscription.long_distance_calls#phrase.subtraction_setter = subtract {long distance calls} from the long distance calls of {this}
-Subscription.payment_method#phrase.action = set the payment method of {this} to {payment method}
-Subscription.payment_method#phrase.navigation = {payment method} of {this}
-Subscription.rate_plan#phrase.action = set the rate plan of {this} to {rate plan}
-Subscription.rate_plan#phrase.clearer = clear the rate plan of {this}
-Subscription.rate_plan#phrase.navigation = {rate plan} of {this}
-Subscription.usage#phrase.action = set the usage of {this} to {usage}
-Subscription.usage#phrase.addition_setter = add {usage} to the usage of {this}
-Subscription.usage#phrase.navigation = {usage} of {this}
-Subscription.usage#phrase.subtraction_setter = subtract {usage} from the usage of {this}
+# decisions.mlsamples.telco_retention.data.Subscription
+decisions.mlsamples.telco_retention.data.Subscription#concept.label = subscription
+decisions.mlsamples.telco_retention.data.Subscription.Subscription(double,double,double,java.lang.String,decisions.mlsamples.telco_retention.data.Rate_plan,double)#phrase.navigation = a new {subscription} where {0, international calls} {1, local calls} {2, long distance calls} {3, payment method} {4, rate plan} {5, usage}
+decisions.mlsamples.telco_retention.data.Subscription.international_calls#phrase.action = set the international calls of {this} to {international calls}
+decisions.mlsamples.telco_retention.data.Subscription.international_calls#phrase.addition_setter = add {international calls} to the international calls of {this}
+decisions.mlsamples.telco_retention.data.Subscription.international_calls#phrase.navigation = {international calls} of {this}
+decisions.mlsamples.telco_retention.data.Subscription.international_calls#phrase.subtraction_setter = subtract {international calls} from the international calls of {this}
+decisions.mlsamples.telco_retention.data.Subscription.local_calls#phrase.action = set the local calls of {this} to {local calls}
+decisions.mlsamples.telco_retention.data.Subscription.local_calls#phrase.addition_setter = add {local calls} to the local calls of {this}
+decisions.mlsamples.telco_retention.data.Subscription.local_calls#phrase.navigation = {local calls} of {this}
+decisions.mlsamples.telco_retention.data.Subscription.local_calls#phrase.subtraction_setter = subtract {local calls} from the local calls of {this}
+decisions.mlsamples.telco_retention.data.Subscription.long_distance_calls#phrase.action = set the long distance calls of {this} to {long distance calls}
+decisions.mlsamples.telco_retention.data.Subscription.long_distance_calls#phrase.addition_setter = add {long distance calls} to the long distance calls of {this}
+decisions.mlsamples.telco_retention.data.Subscription.long_distance_calls#phrase.navigation = {long distance calls} of {this}
+decisions.mlsamples.telco_retention.data.Subscription.long_distance_calls#phrase.subtraction_setter = subtract {long distance calls} from the long distance calls of {this}
+decisions.mlsamples.telco_retention.data.Subscription.payment_method#phrase.action = set the payment method of {this} to {payment method}
+decisions.mlsamples.telco_retention.data.Subscription.payment_method#phrase.navigation = {payment method} of {this}
+decisions.mlsamples.telco_retention.data.Subscription.rate_plan#phrase.action = set the rate plan of {this} to {rate plan}
+decisions.mlsamples.telco_retention.data.Subscription.rate_plan#phrase.clearer = clear the rate plan of {this}
+decisions.mlsamples.telco_retention.data.Subscription.rate_plan#phrase.navigation = {rate plan} of {this}
+decisions.mlsamples.telco_retention.data.Subscription.usage#phrase.action = set the usage of {this} to {usage}
+decisions.mlsamples.telco_retention.data.Subscription.usage#phrase.addition_setter = add {usage} to the usage of {this}
+decisions.mlsamples.telco_retention.data.Subscription.usage#phrase.navigation = {usage} of {this}
+decisions.mlsamples.telco_retention.data.Subscription.usage#phrase.subtraction_setter = subtract {usage} from the usage of {this}

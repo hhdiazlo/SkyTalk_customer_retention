@@ -1,4 +1,6 @@
 
+package decisions.techpreview_samples.loan_validation.loanvalidationdata;
+
 
 public class Approval
         property "ads.typeId" "1"
@@ -53,7 +55,7 @@ public class Borrower
         property "com.fasterxml.jackson.annotation.JsonTypeName" "borrower"
         property "de.generated" "true"
 {
-    public SSN SSN
+    public decisions.techpreview_samples.loan_validation.loanvalidationdata.SSN SSN
                 property "ads.attributeId" "1"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "SSN"
                 property update "true";
@@ -73,11 +75,11 @@ public class Borrower
                 property "ads.attributeId" "5"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "last name"
                 property update "true";
-    public Bankruptcy latestBankruptcy
+    public decisions.techpreview_samples.loan_validation.loanvalidationdata.Bankruptcy latestBankruptcy
                 property "ads.attributeId" "6"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "latest bankruptcy"
                 property update "true";
-    public Borrower spouse
+    public decisions.techpreview_samples.loan_validation.loanvalidationdata.Borrower spouse
                 property "ads.attributeId" "7"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "spouse"
                 property update "true";
@@ -89,7 +91,7 @@ public class Borrower
                 property "ads.attributeId" "9"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "zip code"
                 property update "true";
-    public Borrower(SSN SSN, ilog.rules.brl.Date birthDate, java.lang.Long creditScore, string firstName, string lastName, Bankruptcy latestBankruptcy, Borrower spouse, java.lang.Long yearlyIncome, string zipCode)
+    public Borrower(decisions.techpreview_samples.loan_validation.loanvalidationdata.SSN SSN, ilog.rules.brl.Date birthDate, java.lang.Long creditScore, string firstName, string lastName, decisions.techpreview_samples.loan_validation.loanvalidationdata.Bankruptcy latestBankruptcy, decisions.techpreview_samples.loan_validation.loanvalidationdata.Borrower spouse, java.lang.Long yearlyIncome, string zipCode)
                 property autoExpand "true"
                 property beanConstructor "true"
                 property groups "BALA"
