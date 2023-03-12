@@ -1,20 +1,23 @@
 {
-  "customer": {
-    "car_owner": false,
-    "estimated_income": 38000,
-    "gender": "F",
-    "location": "country",
-    "marital_status": "S",
-    "name": "Sarah Miller",
-    "age": 24,
-    "household": 1
-  },
-  "subscription": {
-    "international_calls": 20,
-    "local_calls": 20,
-    "long_distance_calls": 30,
-    "payment_method": "CC",
-    "rate_plan": "Gold",
-    "usage": 229
+  "operationId" : "049ef349-deeb-42c6-a26a-a6fbe3a61cb1",
+  "body" : {
+    "customer" : {
+      "car_owner" : false,
+      "estimated_income" : 38000,
+      "gender" : "F",
+      "location" : "country",
+      "marital_status" : "S",
+      "name" : "Sarah Miller",
+      "age" : 24,
+      "household" : 1
+    },
+    "subscription" : {
+      "international_calls" : 20,
+      "local_calls" : 20,
+      "long_distance_calls" : 30,
+      "payment_method" : "CC",
+      "rate_plan" : "Gold",
+      "usage" : 229
+    }
   }
 }
