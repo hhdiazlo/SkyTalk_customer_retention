@@ -71,8 +71,9 @@
             <Data Name="Definitions(C0)#HeaderText"><![CDATA[Customer location]]></Data>
             <Data Name="Definitions(A0)#Width"><![CDATA[106]]></Data>
             <Data Name="Definitions(A0)#HeaderText"><![CDATA[Operation cost]]></Data>
-            <Data Name="Definitions(C0)#Width"><![CDATA[80]]></Data>
+            <Data Name="Definitions(C0)#Width"><![CDATA[118]]></Data>
         </ResourceSet>
     </Resources>
-</DT></definition>
+</DT>
+</definition>
 </ilog.rules.studio.model.dt:DecisionTable>
