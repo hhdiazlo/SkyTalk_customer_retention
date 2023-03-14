@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><com.ibm.rules.studio.model.decisionmodel:DecisionModel xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore" xmlns:xmi="http://www.omg.org/XMI" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
   <name>customerChurn</name>
   <uuid>1b4a9d8c-8a04-427a-96f2-69357742a50f</uuid>
   <locale>en_US</locale>
-  <definition>
-        <definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="Decisions" name="customerChurn" namespace="">
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="Decisions" name="customerChurn" namespace="">
     <extensionElements>
         <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
     </extensionElements>
@@ -21,14 +21,14 @@
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="decisions.mlsamples.telco_retention.data.CustomerRecord" collection="false" name="Customer"/>
                 <input bomType="decisions.mlsamples.telco_retention.data.Subscription" collection="false" name="Subscription"/>
-                <output bomType="decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerChurn.Input" collection="false" name="Input mapping"/>
+                <output bomType="cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input" collection="false" name="Input mapping"/>
                 <rule defaultRule="false" href="input-mapping/mapping.drl" kind="BusinessRule" name="mapping"/>
                 <rule defaultRule="false" href="input-mapping/car%20owner.drl" kind="BusinessRule" name="car owner"/>
                 <rule defaultRule="false" href="input-mapping/rate%20plan.dmt" kind="DecisionTable" name="rate plan"/>
                 <rule defaultRule="true" href="input-mapping/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
             </ruleset>
         </extensionElements>
-        <variable id="input_mapping_ii" name="Input mapping" typeRef="decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerChurn.Input"/>
+        <variable id="input_mapping_ii" name="Input mapping" typeRef="cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input"/>
         <informationRequirement>
             <requiredInput href="#input"/>
         </informationRequirement>
@@ -36,27 +36,10 @@
             <requiredInput href="#node_1"/>
         </informationRequirement>
     </decision>
-    <decision id="output" name="ML model invocation">
-        <description>ML model output</description>
-        <extensionElements>
-            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerChurn.Input" collection="false" name="Input mapping"/>
-                <output bomType="decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerChurn.Output" collection="false" name="ML model invocation"/>
-                <rule defaultRule="false" href="output%2FdecisionModel.drl" kind="BusinessRule" name="Prediction"/>
-            </ruleset>
-            <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <property name="ads.designer.predictionInvocation"><![CDATA[true]]></property>
-            </properties>
-        </extensionElements>
-        <variable id="output_ii" name="ML model invocation" typeRef="decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerChurn.Output"/>
-        <informationRequirement>
-            <requiredInput href="#input-mapping"/>
-        </informationRequirement>
-    </decision>
     <decision id="output-mapping" name="Output mapping">
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerChurn.Output" collection="false" name="ML model invocation"/>
+                <input bomType="cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output" collection="false" name="ML model invocation"/>
                 <output bomType="java.lang.Double" collection="false" name="Output mapping"/>
                 <rule defaultRule="false" href="output-mapping/check%20error.drl" kind="BusinessRule" name="check error"/>
                 <rule defaultRule="false" href="output-mapping/get%20prediction.drl" kind="BusinessRule" name="get prediction"/>
@@ -65,7 +48,7 @@
         </extensionElements>
         <variable id="output_mapping_ii" name="Output mapping" typeRef="java.lang.Double"/>
         <informationRequirement>
-            <requiredInput href="#output"/>
+            <requiredInput href="#Prediction"/>
         </informationRequirement>
     </decision>
     <inputData id="node_1" name="Subscription">
@@ -76,6 +59,23 @@
         </extensionElements>
         <variable id="node_1_ii" name="Subscription" typeRef="decisions.mlsamples.telco_retention.data.Subscription"/>
     </inputData>
+    <decision id="Prediction" name="ML model invocation">
+        <description>ML model output</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input" collection="false" name="Input mapping"/>
+                <output bomType="cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output" collection="false" name="ML model invocation"/>
+                <rule defaultRule="false" href="Prediction/Prediction.drl" kind="BusinessRule" name="Prediction"/>
+            </ruleset>
+            <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <property name="ads.designer.predictionInvocation"><![CDATA[true]]></property>
+            </properties>
+        </extensionElements>
+        <variable id="prediction_ii" name="ML model invocation" typeRef="cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output"/>
+        <informationRequirement>
+            <requiredInput href="#input-mapping"/>
+        </informationRequirement>
+    </decision>
 </definitions>
-    </definition>
+</definition>
 </com.ibm.rules.studio.model.decisionmodel:DecisionModel>

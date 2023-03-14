@@ -1,5 +1,5 @@
 
-package decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue;
+package cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue;
 
 
 public class Error
@@ -38,13 +38,13 @@ public class Input
     public string gender
                 property "ads.attributeId" "1"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "Gender";
-    public java.lang.Long household
+    public java.lang.Integer household
                 property "ads.attributeId" "3"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "Household";
     public string paymethod
                 property "ads.attributeId" "7"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "Paymethod";
-    public java.lang.Long rateplan
+    public java.lang.Integer rateplan
                 property "ads.attributeId" "9"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "RatePlan";
     public string status
@@ -53,7 +53,7 @@ public class Input
     public java.lang.Double usage
                 property "ads.attributeId" "8"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "Usage";
-    public Input(java.lang.Double age, string carOwner, java.lang.Double estIncome, string gender, java.lang.Long household, string paymethod, java.lang.Long rateplan, string status, java.lang.Double usage)
+    public Input(string gender, string status, java.lang.Integer household, java.lang.Double estIncome, string carOwner, java.lang.Double age, string paymethod, java.lang.Double usage, java.lang.Integer rateplan)
                 property autoExpand "true"
                 property beanConstructor "true"
                 property groups "BALA"
@@ -69,7 +69,7 @@ public class Output
         }
         property "de.generated" "true"
 {
-    public decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Error error
+    public cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error error
                 property "ads.attributeId" "2"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "error";
     public java.lang.Double prediction
@@ -87,14 +87,13 @@ public class Output
                     $gen "com.ibm.decision.ml.integration.xom.InErrorTestGenerator",
                     $target "BOM"
                 };
-    public static Output run(decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input input)
+    public static Output run(cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input input)
                 property pureFunction "true";
-    public static Output run(com.ibm.decision.run.RunContext runContext, decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input input)
+    public static Output run(com.ibm.decision.run.RunContext runContext, cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input input)
                 property "de.generated" {
                     $gen "com.ibm.decision.ml.integration.xom.PredictionRunGenerator",
                     $target "BOM",
-                    deploymentId "43ca8174-0532-42c0-aaaa-da75441f0331",
-                    providerName "decisions/SkyTalk-customer-retention-DS/SkyTalk ML provider1644990829330"
+                    providerInfoId "hdiazl/SkyTalk-Demo/IBMCloud SkyTalk ML Provider167881636521613b40a24-a68a-4e41-9ea7-88cbab19441e"
                 }
                 property pureFunction "true";
 }

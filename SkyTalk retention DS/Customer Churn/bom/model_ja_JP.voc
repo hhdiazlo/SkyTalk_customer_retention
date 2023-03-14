@@ -1,0 +1,56 @@
+
+# cp4admin.skytalk.skytalk_retention_ds.customerchurn.Error
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Error#concept.label = 出力エラー
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = 新規の {出力エラー}ここで{0, コード} {1, メッセージ} 
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Error.code#phrase.action = {this}のコードを{コード}とする
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Error.code#phrase.navigation = {this}の{コード}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Error.message#phrase.action = {this}のメッセージを{メッセージ}とする
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Error.message#phrase.navigation = {this}の{メッセージ}
+
+# cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input#concept.label = ML モデル入力
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.Input(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Double,java.lang.String,java.lang.Double,java.lang.String,java.lang.Double,java.lang.Integer)#phrase.navigation = 新規の {ML モデル入力}ここで{0, gender} {1, status} {2, household} {3, est income} {4, car owner} {5, age} {6, paymethod} {7, usage} {8, rateplan} 
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.age#phrase.action = {this}のageを{age}とする
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.age#phrase.addition_setter = {this}のageに{age}を追加する
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.age#phrase.navigation = {this}の{age}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.age#phrase.subtraction_setter = {this}のageから{age}を引く
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.carOwner#phrase.action = {this}のcar ownerを{car owner}とする
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.carOwner#phrase.navigation = {this}の{car owner}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.estIncome#phrase.action = {this}のest incomeを{est income}とする
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.estIncome#phrase.addition_setter = {this}のest incomeに{est income}を追加する
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.estIncome#phrase.navigation = {this}の{est income}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.estIncome#phrase.subtraction_setter = {this}のest incomeから{est income}を引く
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.gender#phrase.action = {this}のgenderを{gender}とする
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.gender#phrase.navigation = {this}の{gender}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.household#phrase.action = {this}のhouseholdを{household}とする
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.household#phrase.addition_setter = {this}のhouseholdに{household}を追加する
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.household#phrase.navigation = {this}の{household}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.household#phrase.subtraction_setter = {this}のhouseholdから{household}を引く
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.paymethod#phrase.action = {this}のpaymethodを{paymethod}とする
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.paymethod#phrase.navigation = {this}の{paymethod}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.rateplan#phrase.action = {this}のrateplanを{rateplan}とする
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.rateplan#phrase.addition_setter = {this}のrateplanに{rateplan}を追加する
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.rateplan#phrase.navigation = {this}の{rateplan}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.rateplan#phrase.subtraction_setter = {this}のrateplanから{rateplan}を引く
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.status#phrase.action = {this}のstatusを{status}とする
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.status#phrase.navigation = {this}の{status}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.usage#phrase.action = {this}のusageを{usage}とする
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.usage#phrase.addition_setter = {this}のusageに{usage}を追加する
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.usage#phrase.navigation = {this}の{usage}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.usage#phrase.subtraction_setter = {this}のusageから{usage}を引く
+
+# cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output#concept.label = ML モデル出力
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output.Output(java.lang.String,java.util.List)#phrase.navigation = 新規の {ML モデル出力}ここで{0, prediction} {1, probability} 
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output.addTo_probability(java.lang.Double)#phrase.action = {this}のprobabilityに{0}を追加
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output.clear_probability()#phrase.action = {this}のprobabilityをクリアする
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output.error#phrase.action = {this}のエラーを{エラー}とする
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output.error#phrase.clearer = エラー{this}をクリアする
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output.error#phrase.navigation = {this}の{エラー}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output.inError()#phrase.navigation = {this}はエラーの
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output.prediction#phrase.action = {this}のpredictionを{prediction}とする
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output.prediction#phrase.navigation = {this}の{prediction}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output.probability#phrase.action = {this}のprobabilityを{probability}とする
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output.probability#phrase.navigation = {this}の{probability}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output.removeFrom_probability(java.lang.Double)#phrase.action = {this}のprobabilityから{0}を削除
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output.run(cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input)#phrase.navigation = predict({0})

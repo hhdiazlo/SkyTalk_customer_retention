@@ -1,20 +1,20 @@
 {
   "metadata" : {
-    "id" : "352018bf-5d46-4a44-bd0a-9a9b5908b3ae",
-    "name" : "SkyTalk churn prediction - P1 LGBM Classifier",
-    "modified_at" : "2022-02-16T05:14:08.983Z",
-    "created_at" : "2022-02-16T05:14:08.236Z",
+    "id" : "b77aa7cf-52ba-4739-b55e-511bb0ee163c",
+    "name" : "SkyTalk lifetime value prediction - P2 Random Forest Regressor",
+    "modified_at" : "2023-03-14T17:40:59.685Z",
+    "created_at" : "2023-03-14T17:40:59.003Z",
     "owner" : "IBMid-270004NNP7",
     "space_id" : "c02ba4d1-e91e-4028-a985-1ebcf2e9790c"
   },
   "entity" : {
-    "label_column" : "CHURN",
+    "label_column" : "LifetimeValue",
     "content_import_state" : "completed",
     "metrics" : [ {
-      "timestamp" : "2022-02-16T04:46:36.000Z",
+      "timestamp" : "2023-03-14T17:38:39.000Z",
       "ml_metrics" : { },
       "context" : {
-        "phase" : "pre_hpo_d_output"
+        "phase" : "hpo_d_output"
       }
     } ],
     "type" : "wml-hybrid_0.1",
@@ -62,8 +62,11 @@
       "output" : [ ]
     }
   },
-  "id" : "352018bf-5d46-4a44-bd0a-9a9b5908b3ae",
-  "name" : "SkyTalk churn prediction - P1 LGBM Classifier",
-  "trainedAt" : "2022-02-16T05:14:08.236Z",
-  "modifiedAt" : "2022-02-16T05:14:08.983Z"
+  "system" : {
+    "warnings" : [ ]
+  },
+  "id" : "b77aa7cf-52ba-4739-b55e-511bb0ee163c",
+  "name" : "SkyTalk lifetime value prediction - P2 Random Forest Regressor",
+  "trainedAt" : "2023-03-14T17:40:59.003Z",
+  "modifiedAt" : "2023-03-14T17:40:59.685Z"
 }

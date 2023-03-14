@@ -1,0 +1,56 @@
+
+# cp4admin.skytalk.skytalk_retention_ds.customerchurn.Error
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Error#concept.label = Error de salida
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = un nuevo {Error de salida} en que {0, código} {1, mensaje} 
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Error.code#phrase.action = cambiar el código {this,PARTITIVE_ARTICLE} a {código}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Error.code#phrase.navigation = {código} {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Error.message#phrase.action = cambiar el mensaje {this,PARTITIVE_ARTICLE} a {mensaje}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Error.message#phrase.navigation = {mensaje} {this,PARTITIVE_ARTICLE}
+
+# cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input#concept.label = Entrada del modelo mL
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.Input(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Double,java.lang.String,java.lang.Double,java.lang.String,java.lang.Double,java.lang.Integer)#phrase.navigation = un nuevo {Entrada del modelo mL} en que {0, gender} {1, status} {2, household} {3, est income} {4, car owner} {5, age} {6, paymethod} {7, usage} {8, rateplan} 
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.age#phrase.action = cambiar el age {this,PARTITIVE_ARTICLE} a {age}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.age#phrase.addition_setter = añadir {age} a el age {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.age#phrase.navigation = {age} {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.age#phrase.subtraction_setter = sustraer {age} de el age {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.carOwner#phrase.action = cambiar el car owner {this,PARTITIVE_ARTICLE} a {car owner}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.carOwner#phrase.navigation = {car owner} {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.estIncome#phrase.action = cambiar el est income {this,PARTITIVE_ARTICLE} a {est income}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.estIncome#phrase.addition_setter = añadir {est income} a el est income {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.estIncome#phrase.navigation = {est income} {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.estIncome#phrase.subtraction_setter = sustraer {est income} de el est income {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.gender#phrase.action = cambiar el gender {this,PARTITIVE_ARTICLE} a {gender}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.gender#phrase.navigation = {gender} {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.household#phrase.action = cambiar la household {this,PARTITIVE_ARTICLE} a {household}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.household#phrase.addition_setter = añadir {household} a la household {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.household#phrase.navigation = {household} {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.household#phrase.subtraction_setter = sustraer {household} de la household {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.paymethod#phrase.action = cambiar la paymethod {this,PARTITIVE_ARTICLE} a {paymethod}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.paymethod#phrase.navigation = {paymethod} {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.rateplan#phrase.action = cambiar el rateplan {this,PARTITIVE_ARTICLE} a {rateplan}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.rateplan#phrase.addition_setter = añadir {rateplan} a el rateplan {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.rateplan#phrase.navigation = {rateplan} {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.rateplan#phrase.subtraction_setter = sustraer {rateplan} de el rateplan {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.status#phrase.action = cambiar el status {this,PARTITIVE_ARTICLE} a {status}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.status#phrase.navigation = {status} {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.usage#phrase.action = cambiar el usage {this,PARTITIVE_ARTICLE} a {usage}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.usage#phrase.addition_setter = añadir {usage} a el usage {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.usage#phrase.navigation = {usage} {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input.usage#phrase.subtraction_setter = sustraer {usage} de el usage {this,PARTITIVE_ARTICLE}
+
+# cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output#concept.label = Salida del modelo mL
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output.Output(java.lang.String,java.util.List)#phrase.navigation = un nuevo {Salida del modelo mL} en que {0, predictión} {1, probability} 
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output.addTo_probability(java.lang.Double)#phrase.action = agregar {0} en los probabilityes {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output.clear_probability()#phrase.action = vaciar los probabilityes {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output.error#phrase.action = cambiar el Error {this,PARTITIVE_ARTICLE} a {Error}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output.error#phrase.clearer = borrar el Error {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output.error#phrase.navigation = {Error} {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output.inError()#phrase.navigation = {this} es in error
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output.prediction#phrase.action = cambiar el predictión {this,PARTITIVE_ARTICLE} a {predictión}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output.prediction#phrase.navigation = {predictión} {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output.probability#phrase.action = cambiar el probability {this,PARTITIVE_ARTICLE} a {probability}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output.probability#phrase.navigation = {probability} {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output.removeFrom_probability(java.lang.Double)#phrase.action = quitar {0} de los probabilityes {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerchurn.Output.run(cp4admin.skytalk.skytalk_retention_ds.customerchurn.Input)#phrase.navigation = predict({0})

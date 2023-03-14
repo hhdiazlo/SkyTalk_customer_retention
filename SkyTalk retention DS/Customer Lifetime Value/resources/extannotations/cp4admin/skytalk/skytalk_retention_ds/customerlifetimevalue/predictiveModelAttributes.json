@@ -1,0 +1,6 @@
+{
+  "type" : "CONNECTED_TO_REMOTE_PROVIDER",
+  "generatedByVersion" : "36.0.10",
+  "generationTime" : 1678816884299,
+  "modelName" : "SkyTalk lifetime value prediction - P2 Random Forest Regressor"
+}

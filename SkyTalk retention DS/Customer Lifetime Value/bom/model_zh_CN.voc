@@ -1,0 +1,53 @@
+
+# cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error#concept.label = 输出错误
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = 新建 {输出错误}符合条件：{0, 代码} {1, 讯息} 
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error.code#phrase.action = 设置{this}的当前 代码为{代码}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error.code#phrase.navigation = {this} 的{代码}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error.message#phrase.action = 设置{this}的当前 讯息为{讯息}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error.message#phrase.navigation = {this} 的{讯息}
+
+# cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input#concept.label = ML 模型输入
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.Input(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Double,java.lang.String,java.lang.Double,java.lang.String,java.lang.Double,java.lang.Integer)#phrase.navigation = 新建 {ML 模型输入}符合条件：{0, gender} {1, status} {2, household} {3, est income} {4, car owner} {5, age} {6, paymethod} {7, usage} {8, rateplan} 
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.age#phrase.action = 设置{this}的当前 age为{age}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.age#phrase.addition_setter = 加{age}到{this}的属性当前 age里
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.age#phrase.navigation = {this} 的{age}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.age#phrase.subtraction_setter = 减{age}到{this}的属性当前 age里
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.carOwner#phrase.action = 设置{this}的当前 car owner为{car owner}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.carOwner#phrase.navigation = {this} 的{car owner}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.estIncome#phrase.action = 设置{this}的当前 est income为{est income}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.estIncome#phrase.addition_setter = 加{est income}到{this}的属性当前 est income里
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.estIncome#phrase.navigation = {this} 的{est income}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.estIncome#phrase.subtraction_setter = 减{est income}到{this}的属性当前 est income里
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.gender#phrase.action = 设置{this}的当前 gender为{gender}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.gender#phrase.navigation = {this} 的{gender}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.household#phrase.action = 设置{this}的当前 household为{household}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.household#phrase.addition_setter = 加{household}到{this}的属性当前 household里
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.household#phrase.navigation = {this} 的{household}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.household#phrase.subtraction_setter = 减{household}到{this}的属性当前 household里
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.paymethod#phrase.action = 设置{this}的当前 paymethod为{paymethod}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.paymethod#phrase.navigation = {this} 的{paymethod}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.rateplan#phrase.action = 设置{this}的当前 rateplan为{rateplan}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.rateplan#phrase.addition_setter = 加{rateplan}到{this}的属性当前 rateplan里
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.rateplan#phrase.navigation = {this} 的{rateplan}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.rateplan#phrase.subtraction_setter = 减{rateplan}到{this}的属性当前 rateplan里
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.status#phrase.action = 设置{this}的当前 status为{status}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.status#phrase.navigation = {this} 的{status}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.usage#phrase.action = 设置{this}的当前 usage为{usage}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.usage#phrase.addition_setter = 加{usage}到{this}的属性当前 usage里
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.usage#phrase.navigation = {this} 的{usage}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.usage#phrase.subtraction_setter = 减{usage}到{this}的属性当前 usage里
+
+# cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output#concept.label = ML 模型输出
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.Output(java.lang.Double)#phrase.navigation = 新建 {ML 模型输出}符合条件：{0, prediction} 
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.error#phrase.action = 设置{this}的当前 错误为{错误}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.error#phrase.clearer = 删除当前 错误的{this}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.error#phrase.navigation = {this} 的{错误}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.inError()#phrase.navigation = {this} 是当前 出错
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.prediction#phrase.action = 设置{this}的当前 prediction为{prediction}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.prediction#phrase.addition_setter = 加{prediction}到{this}的属性当前 prediction里
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.prediction#phrase.navigation = {this} 的{prediction}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.prediction#phrase.subtraction_setter = 减{prediction}到{this}的属性当前 prediction里
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.run(cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input)#phrase.navigation = predict({0})

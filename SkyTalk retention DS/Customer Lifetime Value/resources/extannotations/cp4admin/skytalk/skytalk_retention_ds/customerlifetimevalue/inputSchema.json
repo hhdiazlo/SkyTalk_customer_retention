@@ -3,47 +3,38 @@
   "fields" : [ {
     "name" : "Gender",
     "type" : "other",
-    "nullable" : true,
-    "jsonName" : "Gender"
+    "nullable" : true
   }, {
     "name" : "Status",
     "type" : "other",
-    "nullable" : true,
-    "jsonName" : "Status"
+    "nullable" : true
   }, {
     "name" : "Household",
     "type" : "integer",
-    "nullable" : true,
-    "jsonName" : "Household"
+    "nullable" : true
   }, {
     "name" : "Est Income",
     "type" : "double",
-    "nullable" : true,
-    "jsonName" : "Est Income"
+    "nullable" : true
   }, {
     "name" : "Car Owner",
     "type" : "other",
-    "nullable" : true,
-    "jsonName" : "Car Owner"
+    "nullable" : true
   }, {
     "name" : "Age",
     "type" : "double",
-    "nullable" : true,
-    "jsonName" : "Age"
+    "nullable" : true
   }, {
     "name" : "Paymethod",
     "type" : "other",
-    "nullable" : true,
-    "jsonName" : "Paymethod"
+    "nullable" : true
   }, {
     "name" : "Usage",
     "type" : "double",
-    "nullable" : true,
-    "jsonName" : "Usage"
+    "nullable" : true
   }, {
     "name" : "RatePlan",
     "type" : "integer",
-    "nullable" : true,
-    "jsonName" : "RatePlan"
+    "nullable" : true
   } ]
 }

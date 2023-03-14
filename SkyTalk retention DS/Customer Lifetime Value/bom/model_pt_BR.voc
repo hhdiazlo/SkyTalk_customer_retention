@@ -1,0 +1,53 @@
+
+# cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error#concept.label = Erro de saída
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = um novo {Erro de saída} no qual {0, código} {1, mensagem} 
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error.code#phrase.action = atribuir o código {this,PARTITIVE_ARTICLE} a {código}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error.code#phrase.navigation = {código} {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error.message#phrase.action = atribuir o mensagem {this,PARTITIVE_ARTICLE} a {mensagem}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error.message#phrase.navigation = {mensagem} {this,PARTITIVE_ARTICLE}
+
+# cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input#concept.label = Entrada do modelo ML
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.Input(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Double,java.lang.String,java.lang.Double,java.lang.String,java.lang.Double,java.lang.Integer)#phrase.navigation = um novo {Entrada do modelo ML} no qual {0, gender} {1, status} {2, household} {3, est income} {4, car owner} {5, age} {6, paymethod} {7, usage} {8, rateplan} 
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.age#phrase.action = atribuir o age {this,PARTITIVE_ARTICLE} a {age}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.age#phrase.addition_setter = adicionar {age} ao age {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.age#phrase.navigation = {age} {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.age#phrase.subtraction_setter = subtrair {age} do age {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.carOwner#phrase.action = atribuir o car owner {this,PARTITIVE_ARTICLE} a {car owner}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.carOwner#phrase.navigation = {car owner} {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.estIncome#phrase.action = atribuir o est income {this,PARTITIVE_ARTICLE} a {est income}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.estIncome#phrase.addition_setter = adicionar {est income} ao est income {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.estIncome#phrase.navigation = {est income} {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.estIncome#phrase.subtraction_setter = subtrair {est income} do est income {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.gender#phrase.action = atribuir o gender {this,PARTITIVE_ARTICLE} a {gender}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.gender#phrase.navigation = {gender} {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.household#phrase.action = atribuir o household {this,PARTITIVE_ARTICLE} a {household}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.household#phrase.addition_setter = adicionar {household} ao household {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.household#phrase.navigation = {household} {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.household#phrase.subtraction_setter = subtrair {household} do household {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.paymethod#phrase.action = atribuir o paymethod {this,PARTITIVE_ARTICLE} a {paymethod}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.paymethod#phrase.navigation = {paymethod} {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.rateplan#phrase.action = atribuir o rateplan {this,PARTITIVE_ARTICLE} a {rateplan}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.rateplan#phrase.addition_setter = adicionar {rateplan} ao rateplan {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.rateplan#phrase.navigation = {rateplan} {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.rateplan#phrase.subtraction_setter = subtrair {rateplan} do rateplan {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.status#phrase.action = atribuir o status {this,PARTITIVE_ARTICLE} a {status}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.status#phrase.navigation = {status} {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.usage#phrase.action = atribuir o usage {this,PARTITIVE_ARTICLE} a {usage}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.usage#phrase.addition_setter = adicionar {usage} ao usage {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.usage#phrase.navigation = {usage} {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.usage#phrase.subtraction_setter = subtrair {usage} do usage {this,PARTITIVE_ARTICLE}
+
+# cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output#concept.label = Saída do modelo ML
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.Output(java.lang.Double)#phrase.navigation = um novo {Saída do modelo ML} no qual {0, prediction} 
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.error#phrase.action = atribuir o erro {this,PARTITIVE_ARTICLE} a {erro}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.error#phrase.clearer = limpar o erro {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.error#phrase.navigation = {erro} {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.inError()#phrase.navigation = {this} é em erro
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.prediction#phrase.action = atribuir o prediction {this,PARTITIVE_ARTICLE} a {prediction}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.prediction#phrase.addition_setter = adicionar {prediction} ao prediction {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.prediction#phrase.navigation = {prediction} {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.prediction#phrase.subtraction_setter = subtrair {prediction} do prediction {this,PARTITIVE_ARTICLE}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.run(cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input)#phrase.navigation = predict({0})

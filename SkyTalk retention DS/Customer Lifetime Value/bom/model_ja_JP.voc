@@ -1,0 +1,53 @@
+
+# cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error#concept.label = 出力エラー
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = 新規の {出力エラー}ここで{0, コード} {1, メッセージ} 
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error.code#phrase.action = {this}のコードを{コード}とする
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error.code#phrase.navigation = {this}の{コード}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error.message#phrase.action = {this}のメッセージを{メッセージ}とする
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error.message#phrase.navigation = {this}の{メッセージ}
+
+# cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input#concept.label = ML モデル入力
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.Input(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Double,java.lang.String,java.lang.Double,java.lang.String,java.lang.Double,java.lang.Integer)#phrase.navigation = 新規の {ML モデル入力}ここで{0, gender} {1, status} {2, household} {3, est income} {4, car owner} {5, age} {6, paymethod} {7, usage} {8, rateplan} 
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.age#phrase.action = {this}のageを{age}とする
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.age#phrase.addition_setter = {this}のageに{age}を追加する
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.age#phrase.navigation = {this}の{age}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.age#phrase.subtraction_setter = {this}のageから{age}を引く
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.carOwner#phrase.action = {this}のcar ownerを{car owner}とする
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.carOwner#phrase.navigation = {this}の{car owner}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.estIncome#phrase.action = {this}のest incomeを{est income}とする
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.estIncome#phrase.addition_setter = {this}のest incomeに{est income}を追加する
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.estIncome#phrase.navigation = {this}の{est income}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.estIncome#phrase.subtraction_setter = {this}のest incomeから{est income}を引く
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.gender#phrase.action = {this}のgenderを{gender}とする
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.gender#phrase.navigation = {this}の{gender}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.household#phrase.action = {this}のhouseholdを{household}とする
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.household#phrase.addition_setter = {this}のhouseholdに{household}を追加する
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.household#phrase.navigation = {this}の{household}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.household#phrase.subtraction_setter = {this}のhouseholdから{household}を引く
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.paymethod#phrase.action = {this}のpaymethodを{paymethod}とする
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.paymethod#phrase.navigation = {this}の{paymethod}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.rateplan#phrase.action = {this}のrateplanを{rateplan}とする
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.rateplan#phrase.addition_setter = {this}のrateplanに{rateplan}を追加する
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.rateplan#phrase.navigation = {this}の{rateplan}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.rateplan#phrase.subtraction_setter = {this}のrateplanから{rateplan}を引く
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.status#phrase.action = {this}のstatusを{status}とする
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.status#phrase.navigation = {this}の{status}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.usage#phrase.action = {this}のusageを{usage}とする
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.usage#phrase.addition_setter = {this}のusageに{usage}を追加する
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.usage#phrase.navigation = {this}の{usage}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.usage#phrase.subtraction_setter = {this}のusageから{usage}を引く
+
+# cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output#concept.label = ML モデル出力
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.Output(java.lang.Double)#phrase.navigation = 新規の {ML モデル出力}ここで{0, prediction} 
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.error#phrase.action = {this}のエラーを{エラー}とする
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.error#phrase.clearer = エラー{this}をクリアする
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.error#phrase.navigation = {this}の{エラー}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.inError()#phrase.navigation = {this}はエラーの
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.prediction#phrase.action = {this}のpredictionを{prediction}とする
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.prediction#phrase.addition_setter = {this}のpredictionに{prediction}を追加する
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.prediction#phrase.navigation = {this}の{prediction}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.prediction#phrase.subtraction_setter = {this}のpredictionから{prediction}を引く
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.run(cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input)#phrase.navigation = predict({0})

@@ -1,53 +1,53 @@
 
-# decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Error
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Error#concept.label = Output error
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = a new {Output error} where {0, code} {1, message} 
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Error.code#phrase.action = set the code of {this} to {code}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Error.code#phrase.navigation = {code} of {this}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Error.message#phrase.action = set the message of {this} to {message}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Error.message#phrase.navigation = {message} of {this}
+# cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error#concept.label = Output error
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = a new {Output error} where {0, code} {1, message} 
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error.code#phrase.action = set the code of {this} to {code}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error.code#phrase.navigation = {code} of {this}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error.message#phrase.action = set the message of {this} to {message}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Error.message#phrase.navigation = {message} of {this}
 
-# decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input#concept.label = ML model input
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.Input(java.lang.Double,java.lang.String,java.lang.Double,java.lang.String,java.lang.Long,java.lang.String,java.lang.Long,java.lang.String,java.lang.Double)#phrase.navigation = a new {ML model input} where {0, age} {1, car owner} {2, est income} {3, gender} {4, household} {5, paymethod} {6, rateplan} {7, status} {8, usage} 
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.age#phrase.action = set the age of {this} to {age}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.age#phrase.addition_setter = add {age} to the age of {this}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.age#phrase.navigation = {age} of {this}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.age#phrase.subtraction_setter = subtract {age} from the age of {this}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.carOwner#phrase.action = set the car owner of {this} to {car owner}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.carOwner#phrase.navigation = {car owner} of {this}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.estIncome#phrase.action = set the est income of {this} to {est income}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.estIncome#phrase.addition_setter = add {est income} to the est income of {this}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.estIncome#phrase.navigation = {est income} of {this}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.estIncome#phrase.subtraction_setter = subtract {est income} from the est income of {this}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.gender#phrase.action = set the gender of {this} to {gender}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.gender#phrase.navigation = {gender} of {this}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.household#phrase.action = set the household of {this} to {household}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.household#phrase.addition_setter = add {household} to the household of {this}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.household#phrase.navigation = {household} of {this}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.household#phrase.subtraction_setter = subtract {household} from the household of {this}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.paymethod#phrase.action = set the paymethod of {this} to {paymethod}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.paymethod#phrase.navigation = {paymethod} of {this}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.rateplan#phrase.action = set the rateplan of {this} to {rateplan}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.rateplan#phrase.addition_setter = add {rateplan} to the rateplan of {this}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.rateplan#phrase.navigation = {rateplan} of {this}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.rateplan#phrase.subtraction_setter = subtract {rateplan} from the rateplan of {this}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.status#phrase.action = set the status of {this} to {status}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.status#phrase.navigation = {status} of {this}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.usage#phrase.action = set the usage of {this} to {usage}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.usage#phrase.addition_setter = add {usage} to the usage of {this}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.usage#phrase.navigation = {usage} of {this}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input.usage#phrase.subtraction_setter = subtract {usage} from the usage of {this}
+# cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input#concept.label = ML model input
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.Input(java.lang.String,java.lang.String,java.lang.Integer,java.lang.Double,java.lang.String,java.lang.Double,java.lang.String,java.lang.Double,java.lang.Integer)#phrase.navigation = a new {ML model input} where {0, gender} {1, status} {2, household} {3, est income} {4, car owner} {5, age} {6, paymethod} {7, usage} {8, rateplan} 
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.age#phrase.action = set the age of {this} to {age}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.age#phrase.addition_setter = add {age} to the age of {this}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.age#phrase.navigation = {age} of {this}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.age#phrase.subtraction_setter = subtract {age} from the age of {this}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.carOwner#phrase.action = set the car owner of {this} to {car owner}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.carOwner#phrase.navigation = {car owner} of {this}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.estIncome#phrase.action = set the est income of {this} to {est income}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.estIncome#phrase.addition_setter = add {est income} to the est income of {this}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.estIncome#phrase.navigation = {est income} of {this}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.estIncome#phrase.subtraction_setter = subtract {est income} from the est income of {this}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.gender#phrase.action = set the gender of {this} to {gender}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.gender#phrase.navigation = {gender} of {this}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.household#phrase.action = set the household of {this} to {household}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.household#phrase.addition_setter = add {household} to the household of {this}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.household#phrase.navigation = {household} of {this}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.household#phrase.subtraction_setter = subtract {household} from the household of {this}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.paymethod#phrase.action = set the paymethod of {this} to {paymethod}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.paymethod#phrase.navigation = {paymethod} of {this}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.rateplan#phrase.action = set the rateplan of {this} to {rateplan}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.rateplan#phrase.addition_setter = add {rateplan} to the rateplan of {this}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.rateplan#phrase.navigation = {rateplan} of {this}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.rateplan#phrase.subtraction_setter = subtract {rateplan} from the rateplan of {this}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.status#phrase.action = set the status of {this} to {status}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.status#phrase.navigation = {status} of {this}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.usage#phrase.action = set the usage of {this} to {usage}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.usage#phrase.addition_setter = add {usage} to the usage of {this}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.usage#phrase.navigation = {usage} of {this}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input.usage#phrase.subtraction_setter = subtract {usage} from the usage of {this}
 
-# decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Output
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Output#concept.label = ML model output
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Output.Output(java.lang.Double)#phrase.navigation = a new {ML model output} where {0, prediction} 
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Output.error#phrase.action = set the error of {this} to {error}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Output.error#phrase.clearer = clear the error of {this}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Output.error#phrase.navigation = {error} of {this}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Output.inError()#phrase.navigation = {this} is in error
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Output.prediction#phrase.action = set the prediction of {this} to {prediction}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Output.prediction#phrase.addition_setter = add {prediction} to the prediction of {this}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Output.prediction#phrase.navigation = {prediction} of {this}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Output.prediction#phrase.subtraction_setter = subtract {prediction} from the prediction of {this}
-decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Output.run(decisions.skytalk_customer_retention_ds.skytalk_retention_ds.customerLifetimeValue.Input)#phrase.navigation = predict({0})
+# cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output#concept.label = ML model output
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.Output(java.lang.Double)#phrase.navigation = a new {ML model output} where {0, prediction} 
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.error#phrase.action = set the error of {this} to {error}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.error#phrase.clearer = clear the error of {this}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.error#phrase.navigation = {error} of {this}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.inError()#phrase.navigation = {this} is in error
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.prediction#phrase.action = set the prediction of {this} to {prediction}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.prediction#phrase.addition_setter = add {prediction} to the prediction of {this}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.prediction#phrase.navigation = {prediction} of {this}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.prediction#phrase.subtraction_setter = subtract {prediction} from the prediction of {this}
+cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Output.run(cp4admin.skytalk.skytalk_retention_ds.customerlifetimevalue.Input)#phrase.navigation = predict({0})

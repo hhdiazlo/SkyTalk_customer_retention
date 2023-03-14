@@ -3,12 +3,10 @@
   "fields" : [ {
     "name" : "prediction",
     "type" : "string",
-    "nullable" : true,
-    "jsonName" : "prediction"
+    "nullable" : true
   }, {
     "name" : "probability",
     "type" : "[double]",
-    "nullable" : true,
-    "jsonName" : "probability"
+    "nullable" : true
   } ]
 }

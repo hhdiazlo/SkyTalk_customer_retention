@@ -3,7 +3,6 @@
   "fields" : [ {
     "name" : "prediction",
     "type" : "double",
-    "nullable" : true,
-    "jsonName" : "prediction"
+    "nullable" : true
   } ]
 }
