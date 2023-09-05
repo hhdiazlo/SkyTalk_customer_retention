@@ -13,14 +13,14 @@
             <ConditionDefinitions>
                 <ConditionDefinition Id="C0">
                     <ExpressionDefinition>
-                        <Text><![CDATA[the location of Customer is <a location>]]></Text>
+                        <Text><![CDATA[the location of 'Customer' is <a location>]]></Text>
                     </ExpressionDefinition>
                 </ConditionDefinition>
             </ConditionDefinitions>
             <ActionDefinitions>
                 <ActionDefinition Id="A0">
                     <ExpressionDefinition>
-                        <Text><![CDATA[set decision to <a number>]]></Text>
+                        <Text><![CDATA[set 'decision' to <a number>]]></Text>
                     </ExpressionDefinition>
                 </ActionDefinition>
             </ActionDefinitions>
@@ -68,9 +68,9 @@
     </Body>
     <Resources DefaultLocale="en_US">
         <ResourceSet Locale="en_US">
-            <Data Name="Definitions(C0)#HeaderText"><![CDATA[Customer location]]></Data>
-            <Data Name="Definitions(A0)#Width"><![CDATA[106]]></Data>
             <Data Name="Definitions(A0)#HeaderText"><![CDATA[Operation cost]]></Data>
+            <Data Name="Definitions(A0)#Width"><![CDATA[106]]></Data>
+            <Data Name="Definitions(C0)#HeaderText"><![CDATA[Customer location]]></Data>
             <Data Name="Definitions(C0)#Width"><![CDATA[118]]></Data>
         </ResourceSet>
     </Resources>

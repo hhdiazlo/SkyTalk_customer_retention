@@ -12,6 +12,5 @@ then
 else
     add a new offer where
         the estimated cost is 0.05 * the usage , 
-        the message is "Offer " + the name + " a 5% discount on his current subscription" to decision ;
-]]></definition>
+        the message is "Offer " + the name + " a 5% discount on his current subscription" to decision ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

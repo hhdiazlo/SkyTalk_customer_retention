@@ -3,7 +3,6 @@
   <name>Include operation cost</name>
   <uuid>1f35ff80-865f-4948-8d8e-89b8a4b8a323</uuid>
   <locale>en_US</locale>
-  <definition><![CDATA[set decision to decision * (1 - 'Operation cost' );
-print "Maximum retention budget: "+ decision;
-]]></definition>
+  <definition><![CDATA[set decision to decision * ( 1 - 'Operation cost' ) ;
+print "Maximum retention budget: " + decision ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

@@ -8,7 +8,7 @@
 set 'current offer' to an offer in 'Ranked retention offers' ;
 
 -- Get the cost of the currently evaluated offer from the ranked list
-set 'offer cost' to the estimated cost of 'current offer';
+set 'offer cost' to the estimated cost of 'current offer' ;
 
 -- Select the best offer that is below the maximum retention budget
 
@@ -17,6 +17,5 @@ if 'offer cost' is less than 'Retention budget' and
    --the current evaluated offer is less expensive then the previously selected one
 then
     -- select the current offer 
-    set decision to 'current offer';
-]]></definition>
+    set decision to 'current offer' ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

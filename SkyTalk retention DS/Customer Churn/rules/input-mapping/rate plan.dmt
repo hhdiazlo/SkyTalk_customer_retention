@@ -13,15 +13,14 @@
             <ConditionDefinitions>
                 <ConditionDefinition Id="C0">
                     <ExpressionDefinition>
-                        <Text><![CDATA[the rate plan of Subscription is <a rate plan>]]></Text>
+                        <Text><![CDATA[the rate plan of 'Subscription' is <a rate plan>]]></Text>
                     </ExpressionDefinition>
                 </ConditionDefinition>
             </ConditionDefinitions>
             <ActionDefinitions>
                 <ActionDefinition Id="A0">
                     <ExpressionDefinition>
-                        <Text><![CDATA[set the rateplan of decision to <a number>
-]]></Text>
+                        <Text><![CDATA[set the rateplan of 'decision' to <a number>]]></Text>
                     </ExpressionDefinition>
                 </ActionDefinition>
             </ActionDefinitions>
@@ -81,12 +80,13 @@
     </Body>
     <Resources DefaultLocale="en_US">
         <ResourceSet Locale="en_US">
-            <Data Name="Definitions(C0)#HeaderText"><![CDATA[rate plan]]></Data>
+            <Data Name="Definitions(A0)#HeaderText"><![CDATA[ML rate plan]]></Data>
             <Data Name="Definitions(A0)#Width"><![CDATA[400]]></Data>
             <Data Name="Definitions(A0)[0]#HeaderText"><![CDATA[age]]></Data>
-            <Data Name="Definitions(A0)#HeaderText"><![CDATA[ML rate plan]]></Data>
+            <Data Name="Definitions(C0)#HeaderText"><![CDATA[rate plan]]></Data>
             <Data Name="Definitions(C0)#Width"><![CDATA[80]]></Data>
         </ResourceSet>
     </Resources>
-</DT></definition>
+</DT>
+</definition>
 </ilog.rules.studio.model.dt:DecisionTable>

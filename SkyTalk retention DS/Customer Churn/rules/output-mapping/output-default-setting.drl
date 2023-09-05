@@ -3,6 +3,5 @@
   <name>output-default-setting</name>
   <uuid>73abb082-5b7b-43c6-af05-be02eec4871c</uuid>
   <locale>en_US</locale>
-  <definition><![CDATA[set decision to 0.5 ;
-]]></definition>
+  <definition><![CDATA[set decision to 0.5 ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

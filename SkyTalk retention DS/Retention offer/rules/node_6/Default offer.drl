@@ -4,7 +4,6 @@
   <uuid>36d53065-1fd3-4b0d-b2e2-a1ba23901673</uuid>
   <locale>en_US</locale>
   <definition><![CDATA[set decision to a new offer where
-        the estimated cost is 0, 
-        the message is "No offer for this customer" ;
-]]></definition>
+        the estimated cost is 0 , 
+        the message is "No offer for this customer" ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

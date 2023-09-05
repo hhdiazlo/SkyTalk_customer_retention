@@ -1,7 +1,7 @@
 
 # decisions.mlsamples.telco_retention.data.CustomerRecord
 decisions.mlsamples.telco_retention.data.CustomerRecord#concept.label = customerRecord
-decisions.mlsamples.telco_retention.data.CustomerRecord.CustomerRecord(boolean,double,java.lang.String,java.lang.Long,decisions.mlsamples.telco_retention.data.Location,java.lang.String,java.lang.String,double)#phrase.navigation = a new {customerRecord} where {0, car owner} {1, estimated income} {2, gender} {3, household} {4, location} {5, marital status} {6, name} {7, age}
+decisions.mlsamples.telco_retention.data.CustomerRecord.CustomerRecord(boolean,double,java.lang.String,long,decisions.mlsamples.telco_retention.data.Location,java.lang.String,java.lang.String,double)#phrase.navigation = a new {customerRecord} where {0, car owner} {1, estimated income} {2, gender} {3, household} {4, location} {5, marital status} {6, name} {7, age}
 decisions.mlsamples.telco_retention.data.CustomerRecord.car_owner#phrase.action[0] = {this} gets car owner only if {car owner}
 decisions.mlsamples.telco_retention.data.CustomerRecord.car_owner#phrase.action[1] = make it {car owner} that {this} is car owner
 decisions.mlsamples.telco_retention.data.CustomerRecord.car_owner#phrase.action[1].deprecated = true

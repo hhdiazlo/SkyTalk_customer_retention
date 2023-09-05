@@ -2,8 +2,14 @@
   "name" : "hdiazl/SkyTalk-Demo/IBMCloud SkyTalk ML Provider1678816365216",
   "type" : "WML",
   "description" : "",
-  "mlUrl" : "https://us-south.ml.cloud.ibm.com/ml/v4/",
-  "authUrl" : "https://iam.bluemix.net/identity/token",
-  "instanceId" : "c02ba4d1-e91e-4028-a985-1ebcf2e9790c",
-  "apiKey" : null
+  "version" : "V1",
+  "authInfo" : {
+    "authUrl" : "https://iam.bluemix.net/identity/token",
+    "authType" : "IAM"
+  },
+  "providerAdditionalInfo" : {
+    "providerType" : "WML",
+    "mlUrl" : "https://us-south.ml.cloud.ibm.com/ml/v4/",
+    "spaceId" : "c02ba4d1-e91e-4028-a985-1ebcf2e9790c"
+  }
 }

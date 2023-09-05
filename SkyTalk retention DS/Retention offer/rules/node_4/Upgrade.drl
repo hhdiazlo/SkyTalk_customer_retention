@@ -7,8 +7,7 @@
     'Upgrade policy' is defined
 then
     add a new offer where
-        the estimated cost is  0.15 * the usage, 
+        the estimated cost is  0.15 * the usage , 
         the message is "Upgrade " + the name + " to " + 'Upgrade policy' + " with a 15% discount."
-     to decision ;
-]]></definition>
+     to decision ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

@@ -12,12 +12,12 @@
     <packaging>pom</packaging>
 
     <properties>
-        <ads-mojo.version>10.2.0</ads-mojo.version>
+        <ads-mojo.version>11.0.12</ads-mojo.version>
         <buildTime>${maven.build.timestamp}</buildTime>
         <decisionServiceId>${project.groupId}:${project.artifactId}</decisionServiceId>
         <engine-api.version>3.1.0</engine-api.version>
-        <engine-compact-runtime.version>3.1.0</engine-compact-runtime.version>
-        <jackson.version>2.13.4</jackson.version>
+        <engine-compact-runtime.version>3.1.6</engine-compact-runtime.version>
+        <jackson.version>2.15.0</jackson.version>
         <junit.jupiter.version>5.8.0</junit.jupiter.version>
         <maven-antrun-plugin.version>3.0.0</maven-antrun-plugin.version>
         <maven-dependency-plugin.version>3.1.2</maven-dependency-plugin.version>
@@ -26,7 +26,7 @@
         <maven.build.timestamp.format>yyyy-MM-dd'T'HH:mm:ss'Z'</maven.build.timestamp.format>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <ml-integration-runtime.version>36.0.10</ml-integration-runtime.version>
+        <ml-integration-runtime.version>44.0.5</ml-integration-runtime.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
